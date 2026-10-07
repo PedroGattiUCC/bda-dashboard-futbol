@@ -1,0 +1,333 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_estilo",
+      "label": "estilo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "estilo()",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L482"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_fmt",
+      "label": "fmt()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "fmt()",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L465"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_graficar",
+      "label": "graficar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "graficar()",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L494"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_tabla_md",
+      "label": "tabla_md()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "tabla_md()",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L473"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_conectar",
+      "label": "conectar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "conectar()",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L552"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_sentencias",
+      "label": "sentencias()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "sentencias()",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard",
+      "label": "generar_dashboard.py",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "generar_dashboard.py",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_rationale_1",
+      "label": "Genera dashboard.md: cada pregunta de negocio del Paso 1 con su consulta SQL\u2026",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "rationale",
+      "norm_label": "genera dashboard.md: cada pregunta de negocio del paso 1 con su consulta sql...",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_rationale_40",
+      "label": "Divide un archivo SQL en sentencias. Devuelve (titulo_chequeo, sql).",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "rationale",
+      "norm_label": "divide un archivo sql en sentencias. devuelve (titulo_chequeo, sql).",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "correcciones_paso_2_verificacion_nombres_equipos",
+      "label": "verificacion_nombres_equipos.py",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "verificacion_nombres_equipos.py",
+      "file_type": "code",
+      "norm_label": "verificacion_nombres_equipos.py",
+      "source_file": "correcciones/paso-2/verificacion_nombres_equipos.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "correcciones_paso_2_verificacion_nombres_equipos_rationale_1",
+      "label": "Paso 2 c) - Verificacion de consistencia de nombres de club entre Matches.csv y\u2026",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "verificacion_nombres_equipos.py",
+      "file_type": "rationale",
+      "norm_label": "paso 2 c) - verificacion de consistencia de nombres de club entre matches.csv y...",
+      "source_file": "correcciones/paso-2/verificacion_nombres_equipos.py",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_graficar",
+      "target": "correcciones_entrega_final_generar_dashboard_estilo",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L499",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_graficar",
+      "target": "correcciones_entrega_final_generar_dashboard_fmt",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L532",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_main",
+      "target": "correcciones_entrega_final_generar_dashboard_conectar",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L554",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_main",
+      "target": "correcciones_entrega_final_generar_dashboard_sentencias",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L556",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_main",
+      "target": "correcciones_entrega_final_generar_dashboard_tabla_md",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L588",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_main",
+      "target": "correcciones_entrega_final_generar_dashboard_graficar",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L592",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_tabla_md",
+      "target": "correcciones_entrega_final_generar_dashboard_fmt",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L476",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard",
+      "target": "correcciones_entrega_final_generar_dashboard_conectar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard",
+      "target": "correcciones_entrega_final_generar_dashboard_sentencias",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard",
+      "target": "correcciones_entrega_final_generar_dashboard_fmt",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L465",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard",
+      "target": "correcciones_entrega_final_generar_dashboard_tabla_md",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L473",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard",
+      "target": "correcciones_entrega_final_generar_dashboard_estilo",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L482",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard",
+      "target": "correcciones_entrega_final_generar_dashboard_graficar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L494",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard",
+      "target": "correcciones_entrega_final_generar_dashboard_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L552",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_rationale_1",
+      "target": "correcciones_entrega_final_generar_dashboard",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_entrega_final_generar_dashboard_rationale_40",
+      "target": "correcciones_entrega_final_generar_dashboard_sentencias",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/entrega-final/generar_dashboard.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "correcciones_paso_2_verificacion_nombres_equipos_rationale_1",
+      "target": "correcciones_paso_2_verificacion_nombres_equipos",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "correcciones/paso-2/verificacion_nombres_equipos.py",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

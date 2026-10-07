@@ -1,0 +1,260 @@
+{
+  "correcciones/paso-2/verificacion_nombres_equipos.py": {
+    "mtime": 1791142711.3950758,
+    "seen": 1791143555.487343,
+    "ast_hash": "fe582c82a9a3c679041deeaac235f59f",
+    "semantic_hash": "fe582c82a9a3c679041deeaac235f59f"
+  },
+  "correcciones/entrega-final/generar_dashboard.py": {
+    "mtime": 1791144533.943008,
+    "seen": 1791144728.033516,
+    "ast_hash": "8e6c103ecdd75aacb255f49efafd0beb",
+    "semantic_hash": "8e6c103ecdd75aacb255f49efafd0beb"
+  },
+  "correcciones/entrega-final/dashboard-dinamico/app.py": {
+    "mtime": 1791376094.0050733,
+    "seen": 1791376217.2015674,
+    "ast_hash": "da85750f96de4cc28b80dbe200cc1b81",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/conexion.py": {
+    "mtime": 1791375984.279585,
+    "seen": 1791376217.2015743,
+    "ast_hash": "5467fbcf296996fc4612cd9871854b19",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/consultas_base.py": {
+    "mtime": 1791375840.4202871,
+    "seen": 1791376217.2015777,
+    "ast_hash": "c4a13f8e3874352ac15f7b74fff32db9",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/exportar_dump_sql.py": {
+    "mtime": 1791376107.7053,
+    "seen": 1791376217.2015796,
+    "ast_hash": "5ea6b21db0b097c3c1f3db7795083fc8",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/generar_sqlite_contingencia.py": {
+    "mtime": 1791375913.4153974,
+    "seen": 1791376217.2015815,
+    "ast_hash": "31409ff617af12f255422ca7b0b43887",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/migrar_a_clevercloud.py": {
+    "mtime": 1791376028.3080342,
+    "seen": 1791376217.2015831,
+    "ast_hash": "ab07cc8237c1311396373b29c410c678",
+    "semantic_hash": ""
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1791142318.0205243,
+    "seen": 1791376217.202216,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1791142318.0215251,
+    "seen": 1791376217.2022183,
+    "ast_hash": "a831cf3669f1e6ab85d8a80ebe655f99",
+    "semantic_hash": ""
+  },
+  "correcciones/RESUMEN_PARA_EL_GRUPO.md": {
+    "mtime": 1791144657.052037,
+    "seen": 1791376217.2022202,
+    "ast_hash": "8486409c15ef7c5bec8dcede22b8429a",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/README.md": {
+    "mtime": 1791376199.023657,
+    "seen": 1791376217.2022226,
+    "ast_hash": "406c9a1247ed2ac4dea0ddf8acbd2dd9",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md": {
+    "mtime": 1791376163.7606578,
+    "seen": 1791376217.2022245,
+    "ast_hash": "252e4c78294804cdfd89df7f4ba0c515",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/README.md": {
+    "mtime": 1791376182.1152196,
+    "seen": 1791376217.202226,
+    "ast_hash": "1c6b1613efd0a644e5eca7f8e33bd704",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/render.yaml": {
+    "mtime": 1791375779.6913013,
+    "seen": 1791376217.2022278,
+    "ast_hash": "826fbaf6d32832df35e50564212588db",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard-dinamico/requirements.txt": {
+    "mtime": 1791375761.614913,
+    "seen": 1791376217.2022293,
+    "ast_hash": "82db33a4a48086da323cc5d3eb07e79e",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/dashboard.md": {
+    "mtime": 1790733220.1949024,
+    "seen": 1791376217.2022307,
+    "ast_hash": "4023e64af268ea7a76834478a534f3f4",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/requirements.txt": {
+    "mtime": 1791143423.3809116,
+    "seen": 1791376217.2022324,
+    "ast_hash": "73d4a7d8ee9474dafa23c70e5c8809a2",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-1/README.md": {
+    "mtime": 1791143784.2018764,
+    "seen": 1791376217.2022338,
+    "ast_hash": "532669e7dabc3adf591127649f57a77c",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-1/entrega_requerimientos.md": {
+    "mtime": 1790733043.625103,
+    "seen": 1791376217.2022355,
+    "ast_hash": "ac491c49de7a8d1759b9e71094dc54d8",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-2/README.md": {
+    "mtime": 1791143793.63834,
+    "seen": 1791376217.202237,
+    "ast_hash": "75c28e548fc5140cf47b58f39ac52490",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-2/entrega_fuente_datos.md": {
+    "mtime": 1791142493.6255662,
+    "seen": 1791376217.2022383,
+    "ast_hash": "76d02bcf898f40c12d776728c1bcbbd1",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-2/fuente.md": {
+    "mtime": 1791142504.2666526,
+    "seen": 1791376217.2022405,
+    "ast_hash": "9c8ac8d010fea6e3d58ec468ec67f385",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-3/README.md": {
+    "mtime": 1791143804.111494,
+    "seen": 1791376217.202242,
+    "ast_hash": "11771433ab13ffbcee4f8ca4ed95b312",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-3/entrega_modelo_logico.md": {
+    "mtime": 1791144680.937308,
+    "seen": 1791376217.202243,
+    "ast_hash": "514787ebf738c574071c422c29ca3ed6",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-4/EXPLICACION_ETL_PYTHON.md": {
+    "mtime": 1791144631.943696,
+    "seen": 1791376217.2022445,
+    "ast_hash": "d9071250eed708ea9b8a8ebcbe12016b",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-4/README.md": {
+    "mtime": 1791144582.313754,
+    "seen": 1791376217.202246,
+    "ast_hash": "954273eccc787f3204c74d7f4c538904",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-4/entrega_informe.md": {
+    "mtime": 1791144571.9921422,
+    "seen": 1791376217.2022471,
+    "ast_hash": "ff3030b26ea5d8a6f5cf936b9ea11835",
+    "semantic_hash": ""
+  },
+  "correcciones/paso-4/requirements.txt": {
+    "mtime": 1791143417.1925364,
+    "seen": 1791376217.2022483,
+    "ast_hash": "719d126fac47057b5eefd8c5a0211e4e",
+    "semantic_hash": ""
+  },
+  "guia-tp-hefesto.md": {
+    "mtime": 1789546190.0,
+    "seen": 1791376217.20225,
+    "ast_hash": "815692ab8caf3fdefd8ae78332ed36df",
+    "semantic_hash": ""
+  },
+  "hefesto-v2.pdf": {
+    "mtime": 1789838346.0,
+    "seen": 1791376217.2022512,
+    "ast_hash": "52b2dc8d34b920d334fb1b64aedec093",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_01.png": {
+    "mtime": 1790733199.448002,
+    "seen": 1791376217.2022526,
+    "ast_hash": "0f0e1e46bc29363374604d45a55714d0",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_02.png": {
+    "mtime": 1790733200.9080508,
+    "seen": 1791376217.2022538,
+    "ast_hash": "bdc77c23c6abd97c141e95e183dec174",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_03.png": {
+    "mtime": 1790733201.7360768,
+    "seen": 1791376217.202255,
+    "ast_hash": "c7d798c1ec3e585e3fd815c610fb57f0",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_04.png": {
+    "mtime": 1790733202.4913404,
+    "seen": 1791376217.2022564,
+    "ast_hash": "e037fafcb72d73503d924bdcb50d3e9a",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_05.png": {
+    "mtime": 1790733203.401477,
+    "seen": 1791376217.2022579,
+    "ast_hash": "9f5100e2b9d5ce72de7c5fa4664d7674",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_06.png": {
+    "mtime": 1790733204.9204762,
+    "seen": 1791376217.2022593,
+    "ast_hash": "8023830f17e89ea7a95390d266190164",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_07.png": {
+    "mtime": 1790733207.6328807,
+    "seen": 1791376217.2022607,
+    "ast_hash": "1f5bcc736428e475fbf24ed664115b91",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_08.png": {
+    "mtime": 1790733210.4115076,
+    "seen": 1791376217.202262,
+    "ast_hash": "f7c71ff2868639f0d457f463c129cede",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_09.png": {
+    "mtime": 1790733214.8554747,
+    "seen": 1791376217.2022634,
+    "ast_hash": "66b9806565119139f7ed65d696be402d",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_10.png": {
+    "mtime": 1790733216.2549775,
+    "seen": 1791376217.2022645,
+    "ast_hash": "73ecf40f0c7f858c2cea1d017f9f17a7",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_11.png": {
+    "mtime": 1790733217.8253748,
+    "seen": 1791376217.2022657,
+    "ast_hash": "6a917734ffe2a6ba1e0e96db59d45797",
+    "semantic_hash": ""
+  },
+  "correcciones/entrega-final/graficos/pregunta_12.png": {
+    "mtime": 1790733220.1923757,
+    "seen": 1791376217.2022672,
+    "ast_hash": "0f0aeb79897522d63d76772852c68bc1",
+    "semantic_hash": ""
+  }
+}

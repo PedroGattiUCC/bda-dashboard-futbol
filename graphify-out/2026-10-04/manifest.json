@@ -1,0 +1,14 @@
+{
+  "correcciones/paso-2/verificacion_nombres_equipos.py": {
+    "mtime": 1791142711.3950758,
+    "seen": 1791143555.487343,
+    "ast_hash": "fe582c82a9a3c679041deeaac235f59f",
+    "semantic_hash": "fe582c82a9a3c679041deeaac235f59f"
+  },
+  "correcciones/entrega-final/generar_dashboard.py": {
+    "mtime": 1791144533.943008,
+    "seen": 1791144728.033516,
+    "ast_hash": "8e6c103ecdd75aacb255f49efafd0beb",
+    "semantic_hash": "8e6c103ecdd75aacb255f49efafd0beb"
+  }
+}

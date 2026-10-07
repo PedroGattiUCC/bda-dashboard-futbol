@@ -1,0 +1,266 @@
+{
+  ".agents/rules/graphify.md": {
+    "mtime": 1791142318.0205243,
+    "seen": 1791376217.202216,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1791142318.0215251,
+    "seen": 1791376217.2022183,
+    "ast_hash": "a831cf3669f1e6ab85d8a80ebe655f99",
+    "semantic_hash": ""
+  },
+  "guia-tp-hefesto.md": {
+    "mtime": 1789546190.0,
+    "seen": 1791376217.20225,
+    "ast_hash": "815692ab8caf3fdefd8ae78332ed36df",
+    "semantic_hash": ""
+  },
+  "hefesto-v2.pdf": {
+    "mtime": 1789838346.0,
+    "seen": 1791376217.2022512,
+    "ast_hash": "52b2dc8d34b920d334fb1b64aedec093",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/app.py": {
+    "mtime": 1791376094.0050733,
+    "seen": 1791384586.9697592,
+    "ast_hash": "da85750f96de4cc28b80dbe200cc1b81",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/conexion.py": {
+    "mtime": 1791375984.279585,
+    "seen": 1791384586.9697697,
+    "ast_hash": "5467fbcf296996fc4612cd9871854b19",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/consultas_base.py": {
+    "mtime": 1791375840.4202871,
+    "seen": 1791384586.9697764,
+    "ast_hash": "c4a13f8e3874352ac15f7b74fff32db9",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/exportar_dump_sql.py": {
+    "mtime": 1791376107.7053,
+    "seen": 1791384586.969778,
+    "ast_hash": "5ea6b21db0b097c3c1f3db7795083fc8",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/generar_sqlite_contingencia.py": {
+    "mtime": 1791375913.4153974,
+    "seen": 1791384586.9697804,
+    "ast_hash": "31409ff617af12f255422ca7b0b43887",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/migrar_a_clevercloud.py": {
+    "mtime": 1791383302.8234766,
+    "seen": 1791384586.969782,
+    "ast_hash": "3fbabb67c438f5731aed2958d6077f17",
+    "semantic_hash": ""
+  },
+  "entrega-final/generar_dashboard.py": {
+    "mtime": 1791381918.0352778,
+    "seen": 1791384586.9697835,
+    "ast_hash": "5000a59e612ab727c5e3342897c70e9b",
+    "semantic_hash": ""
+  },
+  "paso-2/verificacion_nombres_equipos.py": {
+    "mtime": 1791142711.3950758,
+    "seen": 1791384586.969785,
+    "ast_hash": "fe582c82a9a3c679041deeaac235f59f",
+    "semantic_hash": ""
+  },
+  "RESUMEN_PARA_EL_GRUPO.md": {
+    "mtime": 1791384567.211851,
+    "seen": 1791384586.9703536,
+    "ast_hash": "527e584edbc9bdd7e6848ad70382f3c4",
+    "semantic_hash": ""
+  },
+  "entrega-final/README.md": {
+    "mtime": 1791382047.7486644,
+    "seen": 1791384586.9703562,
+    "ast_hash": "8b15b3d82587338518a98d13bb7070eb",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md": {
+    "mtime": 1791384280.8097732,
+    "seen": 1791384586.9703581,
+    "ast_hash": "5c72ced4fbb39db41479285200567cdf",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/README.md": {
+    "mtime": 1791384294.6970904,
+    "seen": 1791384586.9703598,
+    "ast_hash": "df2a07f81b0c450d4ca0a4cc3fadd6c9",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/render.yaml": {
+    "mtime": 1791384312.882733,
+    "seen": 1791384586.970362,
+    "ast_hash": "704597568202574b0d71a18aa0c55d8c",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard-dinamico/requirements.txt": {
+    "mtime": 1791375761.614913,
+    "seen": 1791384586.9703636,
+    "ast_hash": "82db33a4a48086da323cc5d3eb07e79e",
+    "semantic_hash": ""
+  },
+  "entrega-final/dashboard.md": {
+    "mtime": 1791381769.893901,
+    "seen": 1791384586.9703653,
+    "ast_hash": "3671abed3f27a1a9d9cb50dad92b4cb9",
+    "semantic_hash": ""
+  },
+  "entrega-final/requirements.txt": {
+    "mtime": 1791143423.3809116,
+    "seen": 1791384586.9703667,
+    "ast_hash": "73d4a7d8ee9474dafa23c70e5c8809a2",
+    "semantic_hash": ""
+  },
+  "paso-1/README.md": {
+    "mtime": 1791143784.2018764,
+    "seen": 1791384586.970538,
+    "ast_hash": "532669e7dabc3adf591127649f57a77c",
+    "semantic_hash": ""
+  },
+  "paso-1/entrega_requerimientos.md": {
+    "mtime": 1790733043.625103,
+    "seen": 1791384586.9705398,
+    "ast_hash": "ac491c49de7a8d1759b9e71094dc54d8",
+    "semantic_hash": ""
+  },
+  "paso-2/README.md": {
+    "mtime": 1791143793.63834,
+    "seen": 1791384586.9705427,
+    "ast_hash": "75c28e548fc5140cf47b58f39ac52490",
+    "semantic_hash": ""
+  },
+  "paso-2/entrega_fuente_datos.md": {
+    "mtime": 1791142493.6255662,
+    "seen": 1791384586.9705443,
+    "ast_hash": "76d02bcf898f40c12d776728c1bcbbd1",
+    "semantic_hash": ""
+  },
+  "paso-2/fuente.md": {
+    "mtime": 1791142504.2666526,
+    "seen": 1791384586.970546,
+    "ast_hash": "9c8ac8d010fea6e3d58ec468ec67f385",
+    "semantic_hash": ""
+  },
+  "paso-3/README.md": {
+    "mtime": 1791143804.111494,
+    "seen": 1791384586.9705472,
+    "ast_hash": "11771433ab13ffbcee4f8ca4ed95b312",
+    "semantic_hash": ""
+  },
+  "paso-3/entrega_modelo_logico.md": {
+    "mtime": 1791144680.937308,
+    "seen": 1791384586.970549,
+    "ast_hash": "514787ebf738c574071c422c29ca3ed6",
+    "semantic_hash": ""
+  },
+  "paso-4/EXPLICACION_ETL_PYTHON.md": {
+    "mtime": 1791384534.037802,
+    "seen": 1791384586.9705508,
+    "ast_hash": "07381f0b3279635208bd4b0bf6349206",
+    "semantic_hash": ""
+  },
+  "paso-4/README.md": {
+    "mtime": 1791144582.313754,
+    "seen": 1791384586.9705522,
+    "ast_hash": "954273eccc787f3204c74d7f4c538904",
+    "semantic_hash": ""
+  },
+  "paso-4/entrega_informe.md": {
+    "mtime": 1791384459.511963,
+    "seen": 1791384586.9705539,
+    "ast_hash": "446c6588e0b8a803c46bfc9ab2a78b92",
+    "semantic_hash": ""
+  },
+  "paso-4/requirements.txt": {
+    "mtime": 1791143417.1925364,
+    "seen": 1791384586.9705553,
+    "ast_hash": "719d126fac47057b5eefd8c5a0211e4e",
+    "semantic_hash": ""
+  },
+  "render.yaml": {
+    "mtime": 1791384321.6738882,
+    "seen": 1791384586.970557,
+    "ast_hash": "704597568202574b0d71a18aa0c55d8c",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_01.png": {
+    "mtime": 1790733199.448002,
+    "seen": 1791384586.970724,
+    "ast_hash": "0f0e1e46bc29363374604d45a55714d0",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_02.png": {
+    "mtime": 1790733200.9080508,
+    "seen": 1791384586.9707255,
+    "ast_hash": "bdc77c23c6abd97c141e95e183dec174",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_03.png": {
+    "mtime": 1790733201.7360768,
+    "seen": 1791384586.9707274,
+    "ast_hash": "c7d798c1ec3e585e3fd815c610fb57f0",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_04.png": {
+    "mtime": 1790733202.4913404,
+    "seen": 1791384586.970729,
+    "ast_hash": "e037fafcb72d73503d924bdcb50d3e9a",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_05.png": {
+    "mtime": 1790733203.401477,
+    "seen": 1791384586.9707305,
+    "ast_hash": "9f5100e2b9d5ce72de7c5fa4664d7674",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_06.png": {
+    "mtime": 1790733204.9204762,
+    "seen": 1791384586.9707322,
+    "ast_hash": "8023830f17e89ea7a95390d266190164",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_07.png": {
+    "mtime": 1790733207.6328807,
+    "seen": 1791384586.970734,
+    "ast_hash": "1f5bcc736428e475fbf24ed664115b91",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_08.png": {
+    "mtime": 1790733210.4115076,
+    "seen": 1791384586.970735,
+    "ast_hash": "f7c71ff2868639f0d457f463c129cede",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_09.png": {
+    "mtime": 1790733214.8554747,
+    "seen": 1791384586.9707367,
+    "ast_hash": "66b9806565119139f7ed65d696be402d",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_10.png": {
+    "mtime": 1790733216.2549775,
+    "seen": 1791384586.9707382,
+    "ast_hash": "73ecf40f0c7f858c2cea1d017f9f17a7",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_11.png": {
+    "mtime": 1790733217.8253748,
+    "seen": 1791384586.9707396,
+    "ast_hash": "6a917734ffe2a6ba1e0e96db59d45797",
+    "semantic_hash": ""
+  },
+  "entrega-final/graficos/pregunta_12.png": {
+    "mtime": 1790733220.1923757,
+    "seen": 1791384586.9707422,
+    "ast_hash": "0f0aeb79897522d63d76772852c68bc1",
+    "semantic_hash": ""
+  }
+}

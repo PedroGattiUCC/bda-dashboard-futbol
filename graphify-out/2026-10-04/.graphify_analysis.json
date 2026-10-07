@@ -1,0 +1,96 @@
+{
+  "communities": {
+    "0": [
+      "correcciones_entrega_final_generar_dashboard",
+      "correcciones_entrega_final_generar_dashboard_estilo",
+      "correcciones_entrega_final_generar_dashboard_fmt",
+      "correcciones_entrega_final_generar_dashboard_graficar",
+      "correcciones_entrega_final_generar_dashboard_rationale_1",
+      "correcciones_entrega_final_generar_dashboard_tabla_md"
+    ],
+    "1": [
+      "correcciones_entrega_final_generar_dashboard_conectar",
+      "correcciones_entrega_final_generar_dashboard_main",
+      "correcciones_entrega_final_generar_dashboard_rationale_40",
+      "correcciones_entrega_final_generar_dashboard_sentencias"
+    ],
+    "2": [
+      "correcciones_paso_2_verificacion_nombres_equipos",
+      "correcciones_paso_2_verificacion_nombres_equipos_rationale_1"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5333333333333333,
+    "1": 0.5,
+    "2": 1.0
+  },
+  "gods": [
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_main",
+      "label": "main()",
+      "degree": 5
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_graficar",
+      "label": "graficar()",
+      "degree": 4
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_sentencias",
+      "label": "sentencias()",
+      "degree": 3
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_fmt",
+      "label": "fmt()",
+      "degree": 3
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_tabla_md",
+      "label": "tabla_md()",
+      "degree": 3
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_conectar",
+      "label": "conectar()",
+      "degree": 2
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_estilo",
+      "label": "estilo()",
+      "degree": 2
+    },
+    {
+      "id": "correcciones_paso_2_verificacion_nombres_equipos_rationale_1",
+      "label": "Paso 2 c) - Verificacion de consistencia de nombres de club entre Matches.csv y\u2026",
+      "degree": 1
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_rationale_1",
+      "label": "Genera dashboard.md: cada pregunta de negocio del Paso 1 con su consulta SQL\u2026",
+      "degree": 1
+    },
+    {
+      "id": "correcciones_entrega_final_generar_dashboard_rationale_40",
+      "label": "Divide un archivo SQL en sentencias. Devuelve (titulo_chequeo, sql).",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "main()",
+      "target": "tabla_md()",
+      "source_files": [
+        "correcciones/entrega-final/generar_dashboard.py",
+        "correcciones/entrega-final/generar_dashboard.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 0 \u2192 community 1"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

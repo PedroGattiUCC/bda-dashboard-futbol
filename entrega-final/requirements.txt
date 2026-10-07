@@ -1,0 +1,5 @@
+mysql-connector-python>=8.0
+pandas>=2.0
+sqlalchemy>=2.0
+matplotlib>=3.7
+jupyterlab>=4.0
