@@ -1,16 +1,16 @@
 # Graph Report - PROYECTO BDA  (2026-10-07)
 
 ## Corpus Check
-- 28 files · ~96,348 words
+- 29 files · ~100,020 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 216 nodes · 212 edges · 23 communities (18 shown, 5 thin omitted)
+- 244 nodes · 238 edges · 25 communities (19 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6a03acb0`
+- Built from commit: `c42e113b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,7 +37,9 @@
 - workflows/graphify.md
 - fuente.md
 - verificacion_nombres_equipos.py
-- 5. Notebook 1 — `01_carga_dw.ipynb`, paso por paso
+- Proyecto Data Warehouse: Competencia de Fútbol (Metodología HEFESTO v2)
+- Dashboard Dinámico para la Exposición Final en Clase
+- app.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `Manual Integral: Dashboard Dinámico en Render y Clever Cloud MySQL` - 10 edges
@@ -45,11 +47,11 @@
 3. `GUÍA DE TRABAJO PRÁCTICO #2 — DATA WAREHOUSE CON METODOLOGÍA HEFESTO` - 9 edges
 4. `5. Notebook 1 — `01_carga_dw.ipynb`, paso por paso` - 8 edges
 5. `Paso 4: Integración de Datos (Metodología HEFESTO)` - 8 edges
-6. `Resumen de correcciones, Paso 4 y Entrega Final — para el grupo` - 7 edges
-7. `📊 Demostración de las 6 Preguntas Oficiales (Minutos 2 a 5)` - 7 edges
-8. `Dashboard — Competencia entre Equipos` - 7 edges
-9. `ejecutar_consulta()` - 6 edges
-10. `7. Estrategia y Guión para la Exposición Oral en Clase (Frente al Docente)` - 6 edges
+6. `Proyecto Data Warehouse: Competencia de Fútbol (Metodología HEFESTO v2)` - 7 edges
+7. `Resumen de correcciones, Paso 4 y Entrega Final — para el grupo` - 7 edges
+8. `📊 Demostración de las 6 Preguntas Oficiales (Minutos 2 a 5)` - 7 edges
+9. `Dashboard Dinámico para la Exposición Final en Clase` - 7 edges
+10. `Dashboard — Competencia entre Equipos` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `generar_dump()` --calls--> `construir_sqlite()`  [EXTRACTED]
@@ -60,15 +62,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (23 total, 5 thin omitted)
+## Communities (25 total, 6 thin omitted)
 
 ### Community 0 - "Paso 4: Integración de datos con Python + Jupyter — explicación para el grupo"
-Cohesion: 0.10
-Nodes (19): 1. Qué es esto y por qué usamos Python + Jupyter, 2. Organización del Paso 4 (Integración de Datos), 3.1 ¿Qué es Jupyter y qué es un notebook?, 3.2 Python comparado con C++, 3.3 pandas: trabajar con tablas, 3.4 Las otras librerías, 3. Conceptos básicos (lo mínimo para entender los notebooks), 4.1 Requisitos (+11 more)
+Cohesion: 0.07
+Nodes (27): 1. Qué es esto y por qué usamos Python + Jupyter, 2. Organización del Paso 4 (Integración de Datos), 3.1 ¿Qué es Jupyter y qué es un notebook?, 3.2 Python comparado con C++, 3.3 pandas: trabajar con tablas, 3.4 Las otras librerías, 3. Conceptos básicos (lo mínimo para entender los notebooks), 4.1 Requisitos (+19 more)
 
 ### Community 1 - "conexion.py"
-Cohesion: 0.11
-Nodes (17): Tablero Analítico Dinámico — Data Mart de Competencia de Fútbol (HEFESTO v2)…, _adaptar_sql_para_sqlite(), crear_engine_mysql(), ejecutar_consulta(), obtener_config_por_defecto(), preparar_conexion_sqlite(), probar_conexion(), Gestor de conexiones resiliente a bases de datos: - Clever Cloud MySQL (Remoto… (+9 more)
+Cohesion: 0.13
+Nodes (17): _adaptar_sql_para_sqlite(), cargar_data_mart_en_clevercloud(), crear_engine_mysql(), ejecutar_consulta(), obtener_config_por_defecto(), preparar_conexion_sqlite(), probar_conexion(), Gestor de conexiones resiliente a bases de datos: - Clever Cloud MySQL (Remoto… (+9 more)
 
 ### Community 2 - "Manual Integral: Dashboard Dinámico en Render y Clever Cloud MySQL"
 Cohesion: 0.11
@@ -79,8 +81,8 @@ Cohesion: 0.12
 Nodes (16): 1. ¿Por qué existen dos archivos en la fuente?, 1. Separación Estricta de Entregables: Paso 4 vs. Entrega Final, 2. Qué pasó con el archivo `EloRatings.csv` y cómo explicarlo, 2. ¿Qué se creía al principio?, 3. Decisiones clave que cambian y ordenan el trabajo, 3. ¿Qué descubrimos al auditar los datos reales? (Pedido de corrección P2), 4. ¿Cuál fue su uso real en el proyecto?, 4. Estado de los 4 Pasos de Hefesto v2 (+8 more)
 
 ### Community 4 - "Entrega Final: Dashboard sobre el Modelo Estrella — Guía del Entregable"
-Cohesion: 0.14
-Nodes (11): 📁 Archivos de esta Carpeta, Dashboard Dinámico para la Exposición Final en Clase, 📚 Documentación Completa para la Defensa, ⚡ Inicio Rápido (En 2 Minutos), Opción 1: Ejecución Local en tu Computadora, Opción 2: Despliegue en la Nube (Clever Cloud + Render), 1. Objetivo Metodológico de la Entrega Final, 2. Inventario y Función de Archivos (+3 more)
+Cohesion: 0.29
+Nodes (5): 1. Objetivo Metodológico de la Entrega Final, 2. Inventario y Función de Archivos, 3. Síntesis de Respuestas a las 6 Preguntas de Negocio, 4. Cómo regenerar el Dashboard y los Gráficos, Entrega Final: Dashboard sobre el Modelo Estrella — Guía del Entregable
 
 ### Community 5 - "b) Tablas de Dimensiones"
 Cohesion: 0.17
@@ -130,29 +132,33 @@ Nodes (5): 1. Objetivo Metodológico del Paso 4, 2. Inventario y Función de Arc
 Cohesion: 0.50
 Nodes (3): Paso 2: Análisis de la Fuente de Datos (Metodología HEFESTO), **TABLA 1 - Archivo Auxiliar de Control: `EloRatings.csv`**, **TABLA 2 - Archivo Principal de Partidos: `Matches.csv` (48 columnas reales)**
 
-### Community 22 - "5. Notebook 1 — `01_carga_dw.ipynb`, paso por paso"
-Cohesion: 0.25
-Nodes (8): 5.0 Preparación, 5.1 Extracción, 5.2 Calidad de datos, 5.3 Limpieza, 5.4 Transformación: el modelo estrella en memoria, 5.5 Carga en MySQL, 5.6 Verificación, 5. Notebook 1 — `01_carga_dw.ipynb`, paso por paso
+### Community 22 - "Proyecto Data Warehouse: Competencia de Fútbol (Metodología HEFESTO v2)"
+Cohesion: 0.11
+Nodes (18): 1. El Proceso ETL y el Data Mart (Pasos 1 a 4), 1. La Base de Datos en Clever Cloud está vacía (Falta de Tablas), 2. El Tablero Dinámico (`entrega-final/dashboard-dinamico/`), 2. Nombre de Base de Datos Incorrecto, 3. Variables de Entorno no Configuradas en Render, 4. Modo de Contingencia (Plan B Inmediato), Bases de Datos Avanzadas — Trabajo Práctico Integrador y Tablero Analítico en la Nube, 🔄 ¿Cómo Trabaja Render Tras Bambalinas? (Ciclo de Ejecución Reactivo) (+10 more)
+
+### Community 23 - "Dashboard Dinámico para la Exposición Final en Clase"
+Cohesion: 0.15
+Nodes (12): 1. La Base de Datos en Clever Cloud está vacía (Aún no tiene las tablas), 2. Nombre de Base de Datos Incorrecto, 3. Plan B: Modo Contingencia Offline, Aplicación Web Interactiva en Streamlit + Plotly (Render & Clever Cloud MySQL), 📁 Archivos de esta Carpeta, 🔄 ¿Cómo Trabaja Render Tras Bambalinas al Filtrar o Cambiar Consultas?, 📖 Cómo Usar el Tablero en la Exposición Frente al Profesor, Dashboard Dinámico para la Exposición Final en Clase (+4 more)
 
 ## Knowledge Gaps
-- **120 isolated node(s):** `graphify`, `Workflow: graphify`, `A) Paso 4 — Integración de Datos (ETL)`, `B) Entrega Final — Dashboard sobre el modelo estrella`, `1. ¿Por qué existen dos archivos en la fuente?` (+115 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 155 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **138 isolated node(s):** `graphify`, `Workflow: graphify`, `Bases de Datos Avanzadas — Trabajo Práctico Integrador y Tablero Analítico en la Nube`, `🧭 Estructura General del Repositorio`, `1. El Proceso ETL y el Data Mart (Pasos 1 a 4)` (+133 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 177 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Manual Integral: Dashboard Dinámico en Render y Clever Cloud MySQL` connect `Manual Integral: Dashboard Dinámico en Render y Clever Cloud MySQL` to `📊 Demostración de las 6 Preguntas Oficiales (Minutos 2 a 5)`, `Entrega Final: Dashboard sobre el Modelo Estrella — Guía del Entregable`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `7. Estrategia y Guión para la Exposición Oral en Clase (Frente al Docente)` connect `📊 Demostración de las 6 Preguntas Oficiales (Minutos 2 a 5)` to `Manual Integral: Dashboard Dinámico en Render y Clever Cloud MySQL`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `Paso 4: Integración de datos con Python + Jupyter — explicación para el grupo` connect `Paso 4: Integración de datos con Python + Jupyter — explicación para el grupo` to `5. Notebook 1 — `01_carga_dw.ipynb`, paso por paso`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **What connects `graphify`, `Workflow: graphify`, `A) Paso 4 — Integración de Datos (ETL)` to the rest of the system?**
-  _120 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **What connects `graphify`, `Workflow: graphify`, `Bases de Datos Avanzadas — Trabajo Práctico Integrador y Tablero Analítico en la Nube` to the rest of the system?**
+  _138 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Paso 4: Integración de datos con Python + Jupyter — explicación para el grupo` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `conexion.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.11462450592885376 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12857142857142856 - nodes in this community are weakly interconnected._
 - **Should `Manual Integral: Dashboard Dinámico en Render y Clever Cloud MySQL` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+- **Should `Resumen de correcciones, Paso 4 y Entrega Final — para el grupo` be split into smaller, more focused modules?**
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

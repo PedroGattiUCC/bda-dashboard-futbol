@@ -211,8 +211,14 @@ Se arman con pandas las mismas 5 tablas del Paso 3. Cada dimensión recibe una *
 ### 5.5 Carga en MySQL
 
 1. **Contraseña:** se toma de la variable `MYSQL_PASSWORD` o se pide con un cuadro (`getpass`). **Nunca se escribe en el notebook**, así se puede compartir sin exponerla.
-2. **Crear el modelo:** se lee `../paso-3/entrega_modelo_logico.sql`, se sacan las líneas de comentario (un comentario del DDL tiene un `;` adentro y si no se sacan corta mal las sentencias), se separa por `;` y se ejecuta cada sentencia. Así el modelo es **exactamente el del Paso 3**, con sus claves primarias, foráneas e índices.
-3. **Guardar las tablas:** `dim_tiempo.to_sql("DIM_TIEMPO", motor, if_exists="append", index=False)` inserta todo el DataFrame en la tabla que creó el DDL. `append` significa "agregar a la tabla que ya existe" (no la reemplaza, así se mantienen las restricciones). Primero las dimensiones y después los hechos, porque las claves foráneas de los hechos apuntan a las dimensiones.
+2. **Crear el modelo (Persistencia en disco):** antes de correr el DDL, el código consulta con `SHOW TABLES` si `FACT_COMPETENCIA` ya existe en MySQL:
+   * **Si es la primera vez en la PC:** lee `../paso-3/entrega_modelo_logico.sql` y crea las 5 tablas con sus claves primarias, foráneas e índices.
+   * **Si ya existe en la PC (`RECREAR_TABLAS = False`):** **no borra nada**. El Data Warehouse queda guardado en el disco de tu máquina y no se pierde al reiniciar el kernel o cerrar Jupyter.
+   * **Recreación forzada opcional:** si alguna vez se necesita resetear la base desde cero, basta con cambiar el flag de la celda de configuración a `RECREAR_TABLAS = True`.
+3. **Guardar las tablas (Protección contra duplicados e incremental):**
+   * **Carga inicial:** si `FACT_COMPETENCIA` está vacía, inserta las 4 dimensiones y los 132.256 partidos con `if_exists="append"`.
+   * **Protección contra duplicados:** si los partidos ya están cargados (ej. al reiniciar el kernel y volver a correr), detecta que ya existen y **no los vuelve a insertar**, evitando errores de claves duplicadas.
+   * **Carga incremental:** si el archivo trae partidos nuevos, inserta solo las dimensiones que no existan previamente y agrega únicamente los partidos nuevos a la tabla de hechos.
 
 ### 5.6 Verificación
 

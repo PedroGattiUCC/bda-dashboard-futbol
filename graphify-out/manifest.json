@@ -24,15 +24,15 @@
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/app.py": {
-    "mtime": 1791415429.216674,
-    "seen": 1791415499.0295825,
-    "ast_hash": "ee4ebe36a45cf669bda0a38fe50b7a02",
+    "mtime": 1791417220.4544628,
+    "seen": 1791417349.5189466,
+    "ast_hash": "45688eac437ff7c89d8de99b67ae2007",
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/conexion.py": {
-    "mtime": 1791375984.279585,
-    "seen": 1791384586.9697697,
-    "ast_hash": "5467fbcf296996fc4612cd9871854b19",
+    "mtime": 1791417187.920971,
+    "seen": 1791417349.5189607,
+    "ast_hash": "f6f0b1d3bcdc8b28e5ff951fa3ef1acf",
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/consultas_base.py": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/README.md": {
-    "mtime": 1791384294.6970904,
-    "seen": 1791384586.9703598,
-    "ast_hash": "df2a07f81b0c450d4ca0a4cc3fadd6c9",
+    "mtime": 1791417319.9034586,
+    "seen": 1791417349.5222762,
+    "ast_hash": "4c2db3640c33e336ffce15bb7f854592",
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/render.yaml": {
@@ -162,21 +162,21 @@
     "semantic_hash": ""
   },
   "paso-4/EXPLICACION_ETL_PYTHON.md": {
-    "mtime": 1791384534.037802,
-    "seen": 1791384586.9705508,
-    "ast_hash": "07381f0b3279635208bd4b0bf6349206",
+    "mtime": 1791416805.7559533,
+    "seen": 1791417349.5299737,
+    "ast_hash": "ac144eafac3d5fca73c49ac617125d2b",
     "semantic_hash": ""
   },
   "paso-4/README.md": {
-    "mtime": 1791144582.313754,
-    "seen": 1791384586.9705522,
-    "ast_hash": "954273eccc787f3204c74d7f4c538904",
+    "mtime": 1791416817.4176989,
+    "seen": 1791417349.5299776,
+    "ast_hash": "82145d8803cd09d1d126a4312ce39219",
     "semantic_hash": ""
   },
   "paso-4/entrega_informe.md": {
-    "mtime": 1791384459.511963,
-    "seen": 1791384586.9705539,
-    "ast_hash": "446c6588e0b8a803c46bfc9ab2a78b92",
+    "mtime": 1791416829.7286556,
+    "seen": 1791417349.5299802,
+    "ast_hash": "c8e0d25e69d9e94774ac90aa21a9332b",
     "semantic_hash": ""
   },
   "paso-4/requirements.txt": {
@@ -261,6 +261,12 @@
     "mtime": 1790733220.1923757,
     "seen": 1791384586.9707422,
     "ast_hash": "0f0aeb79897522d63d76772852c68bc1",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1791417285.8678496,
+    "seen": 1791417349.521542,
+    "ast_hash": "7f8ff9e14dea009b5d0e1418da56e539",
     "semantic_hash": ""
   }
 }

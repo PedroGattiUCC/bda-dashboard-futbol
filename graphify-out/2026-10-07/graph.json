@@ -401,102 +401,6 @@
       "source_location": "L114"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_0_preparaci\u00f3n",
-      "label": "5.0 Preparaci\u00f3n",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.0 preparacion",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L153"
-    },
-    {
-      "id": "paso_4_explicacion_etl_python_5_1_extracci\u00f3n",
-      "label": "5.1 Extracci\u00f3n",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.1 extraccion",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L157"
-    },
-    {
-      "id": "paso_4_explicacion_etl_python_5_2_calidad_de_datos",
-      "label": "5.2 Calidad de datos",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.2 calidad de datos",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L167"
-    },
-    {
-      "id": "paso_4_explicacion_etl_python_5_3_limpieza",
-      "label": "5.3 Limpieza",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.3 limpieza",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L184"
-    },
-    {
-      "id": "paso_4_explicacion_etl_python_5_4_transformaci\u00f3n_el_modelo_estrella_en_memoria",
-      "label": "5.4 Transformaci\u00f3n: el modelo estrella en memoria",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.4 transformacion: el modelo estrella en memoria",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L199"
-    },
-    {
-      "id": "paso_4_explicacion_etl_python_5_5_carga_en_mysql",
-      "label": "5.5 Carga en MySQL",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.5 carga en mysql",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L211"
-    },
-    {
-      "id": "paso_4_explicacion_etl_python_5_6_verificaci\u00f3n",
-      "label": "5.6 Verificaci\u00f3n",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.6 verificacion",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L217"
-    },
-    {
-      "id": "paso_4_explicacion_etl_python_5_notebook_1_01_carga_dw_ipynb_paso_por_paso",
-      "label": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L151"
-    },
-    {
       "id": "paso_4_explicacion_etl_python_6_1_preparaci\u00f3n_igual_para_todas_las_preguntas",
       "label": "6.1 Preparaci\u00f3n (igual para todas las preguntas)",
       "_origin": "ast",
@@ -1509,7 +1413,7 @@
       "node_kind": "heading",
       "norm_label": "8. resumen de respuestas clave ante posibles preguntas del profesor",
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L252"
+      "source_location": "L261"
     },
     {
       "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_componentes_y_sus_roles",
@@ -1700,6 +1604,102 @@
       "norm_label": "paso 2 c) - verificacion de consistencia de nombres de club entre matches.csv y...",
       "source_file": "paso-2/verificacion_nombres_equipos.py",
       "source_location": "L1"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_0_preparaci\u00f3n",
+      "label": "5.0 Preparaci\u00f3n",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.0 preparacion",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L153"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_1_extracci\u00f3n",
+      "label": "5.1 Extracci\u00f3n",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.1 extraccion",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L157"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_2_calidad_de_datos",
+      "label": "5.2 Calidad de datos",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.2 calidad de datos",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L167"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_3_limpieza",
+      "label": "5.3 Limpieza",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.3 limpieza",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L184"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_4_transformaci\u00f3n_el_modelo_estrella_en_memoria",
+      "label": "5.4 Transformaci\u00f3n: el modelo estrella en memoria",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.4 transformacion: el modelo estrella en memoria",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L199"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_5_carga_en_mysql",
+      "label": "5.5 Carga en MySQL",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.5 carga en mysql",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L211"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_6_verificaci\u00f3n",
+      "label": "5.6 Verificaci\u00f3n",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.6 verificacion",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L217"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_notebook_1_01_carga_dw_ipynb_paso_por_paso",
+      "label": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L151"
     },
     {
       "id": "resumen_para_el_grupo",
@@ -2441,7 +2441,7 @@
       "label": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "7. estrategia y guion para la exposicion oral en clase (frente al docente)",
@@ -2453,7 +2453,7 @@
       "label": "Caso A: Pregunta 1 (Evoluci\u00f3n de Elo \u2014 Nottingham Forest)",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "caso a: pregunta 1 (evolucion de elo \u2014 nottingham forest)",
@@ -2465,7 +2465,7 @@
       "label": "Caso B: Pregunta 2 (Historial de Cl\u00e1sicos)",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "caso b: pregunta 2 (historial de clasicos)",
@@ -2473,38 +2473,74 @@
       "source_location": "L202"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_c_pregunta_3_a_12",
-      "label": "Caso C: Pregunta 3 a 12",
+      "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_c_pregunta_3_ventaja_de_local\u00eda",
+      "label": "Caso C: Pregunta 3 (Ventaja de Local\u00eda)",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "caso c: pregunta 3 a 12",
+      "norm_label": "caso c: pregunta 3 (ventaja de localia)",
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
       "source_location": "L206"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_d_pregunta_4_paridad_de_ligas",
+      "label": "Caso D: Pregunta 4 (Paridad de Ligas)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "caso d: pregunta 4 (paridad de ligas)",
+      "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
+      "source_location": "L209"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_e_pregunta_5_disciplina_y_tarjetas_por_liga",
+      "label": "Caso E: Pregunta 5 (Disciplina y Tarjetas por Liga)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "caso e: pregunta 5 (disciplina y tarjetas por liga)",
+      "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
+      "source_location": "L212"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_f_pregunta_6_mejores_visitantes_en_5_a\u00f1os",
+      "label": "Caso F: Pregunta 6 (Mejores Visitantes en 5 A\u00f1os)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "caso f: pregunta 6 (mejores visitantes en 5 anos)",
+      "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
+      "source_location": "L215"
     },
     {
       "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_consola_sql_en_vivo_para_preguntas_sorpresa_del_docente",
       "label": "\ud83d\udcbb Consola SQL en Vivo: Para Preguntas Sorpresa del Docente",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udcbb consola sql en vivo: para preguntas sorpresa del docente",
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L223"
+      "source_location": "L232"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_preguntas_oficiales_minutos_2_a_5",
-      "label": "\ud83d\udcca Demostraci\u00f3n de las Preguntas Oficiales (Minutos 2 a 5)",
+      "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
+      "label": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "\ud83d\udcca demostracion de las preguntas oficiales (minutos 2 a 5)",
+      "norm_label": "\ud83d\udcca demostracion de las 6 preguntas oficiales (minutos 2 a 5)",
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
       "source_location": "L193"
     },
@@ -2513,19 +2549,19 @@
       "label": "\ud83d\ude80 El \"Momento Decisivo\": Modificaci\u00f3n de Consultas SQL en Vivo",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\ude80 el \"momento decisivo\": modificacion de consultas sql en vivo",
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L211"
+      "source_location": "L220"
     },
     {
       "id": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_introducci\u00f3n_minuto_0_a_1_puesta_en_contexto",
       "label": "\ud83c\udfa4 Introducci\u00f3n (Minuto 0 a 1): Puesta en Contexto",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83c\udfa4 introduccion (minuto 0 a 1): puesta en contexto",
@@ -2537,12 +2573,12 @@
       "label": "\ud83d\udee1\ufe0f Plan de Contingencia (Si se cae el WiFi de la Facultad)",
       "_origin": "ast",
       "community": 9,
-      "community_name": "7. Estrategia y Gui\u00f3n para la Exposici\u00f3n Oral en Clase (Frente al Docente)",
+      "community_name": "\ud83d\udcca Demostraci\u00f3n de las 6 Preguntas Oficiales (Minutos 2 a 5)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udee1\ufe0f plan de contingencia (si se cae el wifi de la facultad)",
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L239"
+      "source_location": "L248"
     }
   ],
   "links": [
@@ -2747,7 +2783,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "entrega-final/dashboard-dinamico/app.py",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -2759,7 +2795,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "entrega-final/dashboard-dinamico/app.py",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -3096,7 +3132,7 @@
     },
     {
       "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_7_estrategia_y_gui\u00f3n_para_la_exposici\u00f3n_oral_en_clase_frente_al_docente",
-      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_preguntas_oficiales_minutos_2_a_5",
+      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3113,7 +3149,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L211",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
@@ -3124,7 +3160,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L223",
+      "source_location": "L232",
       "weight": 1.0
     },
     {
@@ -3135,11 +3171,11 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L239",
+      "source_location": "L248",
       "weight": 1.0
     },
     {
-      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_preguntas_oficiales_minutos_2_a_5",
+      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
       "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_a_pregunta_1_evoluci\u00f3n_de_elo_nottingham_forest",
       "relation": "contains",
       "_origin": "ast",
@@ -3150,7 +3186,7 @@
       "weight": 1.0
     },
     {
-      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_preguntas_oficiales_minutos_2_a_5",
+      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
       "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_b_pregunta_2_historial_de_cl\u00e1sicos",
       "relation": "contains",
       "_origin": "ast",
@@ -3161,14 +3197,47 @@
       "weight": 1.0
     },
     {
-      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_preguntas_oficiales_minutos_2_a_5",
-      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_c_pregunta_3_a_12",
+      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
+      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_c_pregunta_3_ventaja_de_local\u00eda",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
       "source_location": "L206",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
+      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_d_pregunta_4_paridad_de_ligas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
+      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_e_pregunta_5_disciplina_y_tarjetas_por_liga",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_demostraci\u00f3n_de_las_6_preguntas_oficiales_minutos_2_a_5",
+      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue_caso_f_pregunta_6_mejores_visitantes_en_5_a\u00f1os",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
+      "source_location": "L215",
       "weight": 1.0
     },
     {
@@ -3234,7 +3303,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
-      "source_location": "L252",
+      "source_location": "L261",
       "weight": 1.0
     },
     {
@@ -4866,5 +4935,6 @@
       "weight": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "6a03acb01b58c07440e850003894d33a5e760ccb"
 }

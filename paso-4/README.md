@@ -49,8 +49,11 @@ El proceso de integración de datos se ejecuta de forma interactiva y trazable a
 3. **Ejecutar el cuaderno:**
    * Abrir `01_carga_dw.ipynb`.
    * Ejecutar las celdas secuencialmente o presionar **Run → Run All Cells**.
-   * Al llegar al bloque de persistencia en MySQL, ingresar la contraseña del usuario `root` de forma interactiva (o definir previamente `$env:MYSQL_PASSWORD = "..."` en la terminal).
-   * El proceso tomará ~60 segundos, dejando la base `dw_competencia_futbol` completamente cargada y validada contra el CSV original.
+   * Al llegar al bloque de persistencia en MySQL, ingresar la contraseña del usuario `root` de forma interactiva (o definir previamente `$env:MYSQL_PASSWORD = "..."` en la terminal para no tener que tipear la contraseña).
+   * **Persistencia local en disco:** La estructura del Data Warehouse y sus datos quedan almacenados de manera permanente en el servidor MySQL de cada computadora.
+   * **Reinicio del kernel:** Puedes reiniciar el kernel y reejecutar el notebook con total tranquilidad. El script detecta si el DW ya está creado y **no borra nada ni duplica datos**.
+   * **Carga incremental:** Si se agregan partidos nuevos al dataset, el notebook insertará solo las dimensiones y los partidos nuevos sin tocar los históricos.
+   * **Recreación desde cero (opcional):** Si algún integrante necesita reconstruir el DW desde cero, solo debe cambiar `RECREAR_TABLAS = True` en la celda de configuración (0.2).
 
 ---
 

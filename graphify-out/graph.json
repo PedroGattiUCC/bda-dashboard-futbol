@@ -14,7 +14,7 @@
       "file_type": "code",
       "norm_label": "stddevsamp",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_adaptar_sql_para_sqlite",
@@ -26,7 +26,19 @@
       "file_type": "code",
       "norm_label": "_adaptar_sql_para_sqlite()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L109"
+      "source_location": "L146"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_conexion_cargar_data_mart_en_clevercloud",
+      "label": "cargar_data_mart_en_clevercloud()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "conexion.py",
+      "file_type": "code",
+      "norm_label": "cargar_data_mart_en_clevercloud()",
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L190"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_crear_engine_mysql",
@@ -38,7 +50,7 @@
       "file_type": "code",
       "norm_label": "crear_engine_mysql()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L51"
+      "source_location": "L52"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_ejecutar_consulta",
@@ -50,7 +62,7 @@
       "file_type": "code",
       "norm_label": "ejecutar_consulta()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L129"
+      "source_location": "L166"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_obtener_config_por_defecto",
@@ -62,7 +74,7 @@
       "file_type": "code",
       "norm_label": "obtener_config_por_defecto()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L40"
+      "source_location": "L41"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_preparar_conexion_sqlite",
@@ -74,7 +86,7 @@
       "file_type": "code",
       "norm_label": "preparar_conexion_sqlite()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L68"
+      "source_location": "L87"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_probar_conexion",
@@ -86,7 +98,7 @@
       "file_type": "code",
       "norm_label": "probar_conexion()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L81"
+      "source_location": "L100"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_stddevsamp_finalize",
@@ -98,7 +110,7 @@
       "file_type": "code",
       "norm_label": ".finalize()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_stddevsamp_init",
@@ -110,7 +122,7 @@
       "file_type": "code",
       "norm_label": ".__init__()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "entrega_final_dashboard_dinamico_conexion_stddevsamp_step",
@@ -122,7 +134,19 @@
       "file_type": "code",
       "norm_label": ".step()",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L24"
+      "source_location": "L25"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_app_cb",
+      "label": "cb()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "cb()",
+      "source_file": "entrega-final/dashboard-dinamico/app.py",
+      "source_location": "L114"
     },
     {
       "id": "entrega_final_generar_dashboard_conectar",
@@ -401,6 +425,102 @@
       "source_location": "L114"
     },
     {
+      "id": "paso_4_explicacion_etl_python_5_0_preparaci\u00f3n",
+      "label": "5.0 Preparaci\u00f3n",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.0 preparacion",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L153"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_1_extracci\u00f3n",
+      "label": "5.1 Extracci\u00f3n",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.1 extraccion",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L157"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_2_calidad_de_datos",
+      "label": "5.2 Calidad de datos",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.2 calidad de datos",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L167"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_3_limpieza",
+      "label": "5.3 Limpieza",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.3 limpieza",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L184"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_4_transformaci\u00f3n_el_modelo_estrella_en_memoria",
+      "label": "5.4 Transformaci\u00f3n: el modelo estrella en memoria",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.4 transformacion: el modelo estrella en memoria",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L199"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_5_carga_en_mysql",
+      "label": "5.5 Carga en MySQL",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.5 carga en mysql",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L211"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_6_verificaci\u00f3n",
+      "label": "5.6 Verificaci\u00f3n",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5.6 verificacion",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L223"
+    },
+    {
+      "id": "paso_4_explicacion_etl_python_5_notebook_1_01_carga_dw_ipynb_paso_por_paso",
+      "label": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Paso 4: Integraci\u00f3n de datos con Python + Jupyter \u2014 explicaci\u00f3n para el grupo",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "source_location": "L151"
+    },
+    {
       "id": "paso_4_explicacion_etl_python_6_1_preparaci\u00f3n_igual_para_todas_las_preguntas",
       "label": "6.1 Preparaci\u00f3n (igual para todas las preguntas)",
       "_origin": "ast",
@@ -410,7 +530,7 @@
       "node_kind": "heading",
       "norm_label": "6.1 preparacion (igual para todas las preguntas)",
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L233"
+      "source_location": "L239"
     },
     {
       "id": "paso_4_explicacion_etl_python_6_2_las_12_preguntas",
@@ -422,7 +542,7 @@
       "node_kind": "heading",
       "norm_label": "6.2 las 12 preguntas",
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L242"
+      "source_location": "L248"
     },
     {
       "id": "paso_4_explicacion_etl_python_6_explotaci\u00f3n_anal\u00edtica_notebook_del_dashboard_en_entrega_final_dashboard_ipynb",
@@ -434,7 +554,7 @@
       "node_kind": "heading",
       "norm_label": "6. explotacion analitica \u2014 notebook del dashboard (en `../entrega-final/dashboard.ipynb`)",
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L231"
+      "source_location": "L237"
     },
     {
       "id": "paso_4_explicacion_etl_python_7_c\u00f3mo_se_comprob\u00f3_que_funciona",
@@ -446,7 +566,7 @@
       "node_kind": "heading",
       "norm_label": "7. como se comprobo que funciona",
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L265"
+      "source_location": "L271"
     },
     {
       "id": "paso_4_explicacion_etl_python_8_errores_comunes_y_c\u00f3mo_resolverlos",
@@ -458,7 +578,7 @@
       "node_kind": "heading",
       "norm_label": "8. errores comunes y como resolverlos",
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L276"
+      "source_location": "L282"
     },
     {
       "id": "paso_4_explicacion_etl_python_9_pautas_para_la_defensa_grupal",
@@ -470,7 +590,7 @@
       "node_kind": "heading",
       "norm_label": "9. pautas para la defensa grupal",
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L290"
+      "source_location": "L296"
     },
     {
       "id": "paso_4_explicacion_etl_python_paso_4_integraci\u00f3n_de_datos_con_python_jupyter_explicaci\u00f3n_para_el_grupo",
@@ -485,17 +605,6 @@
       "source_location": "L1"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_app",
-      "label": "app.py",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "conexion.py",
-      "file_type": "code",
-      "norm_label": "app.py",
-      "source_file": "entrega-final/dashboard-dinamico/app.py",
-      "source_location": "L1"
-    },
-    {
       "id": "entrega_final_dashboard_dinamico_conexion",
       "label": "conexion.py",
       "_origin": "ast",
@@ -504,28 +613,6 @@
       "file_type": "code",
       "norm_label": "conexion.py",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_consultas_base",
-      "label": "consultas_base.py",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "conexion.py",
-      "file_type": "code",
-      "norm_label": "consultas_base.py",
-      "source_file": "entrega-final/dashboard-dinamico/consultas_base.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_app_rationale_1",
-      "label": "Tablero Anal\u00edtico Din\u00e1mico \u2014 Data Mart de Competencia de F\u00fatbol (HEFESTO v2)\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "conexion.py",
-      "file_type": "rationale",
-      "norm_label": "tablero analitico dinamico \u2014 data mart de competencia de futbol (hefesto v2)...",
-      "source_file": "entrega-final/dashboard-dinamico/app.py",
       "source_location": "L1"
     },
     {
@@ -540,7 +627,18 @@
       "source_location": "L1"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_conexion_rationale_110",
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_101",
+      "label": "Prueba la conectividad y devuelve (exito: bool, mensaje: str,\u2026",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "conexion.py",
+      "file_type": "rationale",
+      "norm_label": "prueba la conectividad y devuelve (exito: bool, mensaje: str,...",
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_147",
       "label": "Adapta sintaxis temporal de MySQL (ej: INTERVAL 5 YEAR) para SQLite si es\u2026",
       "_origin": "ast",
       "community": 1,
@@ -548,10 +646,10 @@
       "file_type": "rationale",
       "norm_label": "adapta sintaxis temporal de mysql (ej: interval 5 year) para sqlite si es...",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L110"
+      "source_location": "L147"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_conexion_rationale_130",
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_167",
       "label": "Ejecuta una consulta SQL y retorna (DataFrame, tiempo_segundos, error_str).",
       "_origin": "ast",
       "community": 1,
@@ -559,10 +657,21 @@
       "file_type": "rationale",
       "norm_label": "ejecuta una consulta sql y retorna (dataframe, tiempo_segundos, error_str).",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L130"
+      "source_location": "L167"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_conexion_rationale_20",
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_191",
+      "label": "Copia el esquema, las dimensiones, hechos y vistas desde SQLite hacia Clever\u2026",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "conexion.py",
+      "file_type": "rationale",
+      "norm_label": "copia el esquema, las dimensiones, hechos y vistas desde sqlite hacia clever...",
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L191"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_21",
       "label": "Implementaci\u00f3n de STDDEV_SAMP para emulaci\u00f3n completa en SQLite.",
       "_origin": "ast",
       "community": 1,
@@ -570,10 +679,10 @@
       "file_type": "rationale",
       "norm_label": "implementacion de stddev_samp para emulacion completa en sqlite.",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L20"
+      "source_location": "L21"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_conexion_rationale_41",
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_42",
       "label": "Lee las credenciales configuradas en el entorno (Render o m\u00e1quina local).",
       "_origin": "ast",
       "community": 1,
@@ -581,21 +690,21 @@
       "file_type": "rationale",
       "norm_label": "lee las credenciales configuradas en el entorno (render o maquina local).",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L41"
+      "source_location": "L42"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_conexion_rationale_52",
-      "label": "Crea un engine de SQLAlchemy optimizado para MySQL / Clever Cloud.",
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_53",
+      "label": "Crea un engine de SQLAlchemy optimizado para Clever Cloud y MySQL remoto. Usa\u2026",
       "_origin": "ast",
       "community": 1,
       "community_name": "conexion.py",
       "file_type": "rationale",
-      "norm_label": "crea un engine de sqlalchemy optimizado para mysql / clever cloud.",
+      "norm_label": "crea un engine de sqlalchemy optimizado para clever cloud y mysql remoto. usa...",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L52"
+      "source_location": "L53"
     },
     {
-      "id": "entrega_final_dashboard_dinamico_conexion_rationale_69",
+      "id": "entrega_final_dashboard_dinamico_conexion_rationale_88",
       "label": "Abre conexi\u00f3n SQLite registrando funciones de compatibilidad con MySQL.",
       "_origin": "ast",
       "community": 1,
@@ -603,29 +712,7 @@
       "file_type": "rationale",
       "norm_label": "abre conexion sqlite registrando funciones de compatibilidad con mysql.",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L69"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_conexion_rationale_82",
-      "label": "Prueba la conectividad y devuelve (exito: bool, mensaje: str).",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "conexion.py",
-      "file_type": "rationale",
-      "norm_label": "prueba la conectividad y devuelve (exito: bool, mensaje: str).",
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L82"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_consultas_base_rationale_1",
-      "label": "Definici\u00f3n y cat\u00e1logo modular de las 12 preguntas de negocio oficiales\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "conexion.py",
-      "file_type": "rationale",
-      "norm_label": "definicion y catalogo modular de las 12 preguntas de negocio oficiales...",
-      "source_file": "entrega-final/dashboard-dinamico/consultas_base.py",
-      "source_location": "L1"
+      "source_location": "L88"
     },
     {
       "id": "guia_tp_hefesto",
@@ -1189,7 +1276,7 @@
       "node_kind": "heading",
       "norm_label": "4. resultados de verificacion y balance",
       "source_file": "paso-4/README.md",
-      "source_location": "L57"
+      "source_location": "L60"
     },
     {
       "id": "paso_4_readme_paso_4_integraci\u00f3n_de_datos_etl_gu\u00eda_del_entregable",
@@ -1606,100 +1693,432 @@
       "source_location": "L1"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_0_preparaci\u00f3n",
-      "label": "5.0 Preparaci\u00f3n",
+      "id": "readme",
+      "label": "README.md",
       "_origin": "ast",
       "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5.0 preparacion",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L153"
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
+      "source_location": "L1"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_1_extracci\u00f3n",
-      "label": "5.1 Extracci\u00f3n",
+      "id": "readme_1_el_proceso_etl_y_el_data_mart_pasos_1_a_4",
+      "label": "1. El Proceso ETL y el Data Mart (Pasos 1 a 4)",
       "_origin": "ast",
       "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5.1 extraccion",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L157"
+      "norm_label": "1. el proceso etl y el data mart (pasos 1 a 4)",
+      "source_file": "README.md",
+      "source_location": "L77"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_2_calidad_de_datos",
-      "label": "5.2 Calidad de datos",
+      "id": "readme_1_la_base_de_datos_en_clever_cloud_est\u00e1_vac\u00eda_falta_de_tablas",
+      "label": "1. La Base de Datos en Clever Cloud est\u00e1 vac\u00eda (Falta de Tablas)",
       "_origin": "ast",
       "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5.2 calidad de datos",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L167"
+      "norm_label": "1. la base de datos en clever cloud esta vacia (falta de tablas)",
+      "source_file": "README.md",
+      "source_location": "L142"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_3_limpieza",
-      "label": "5.3 Limpieza",
+      "id": "readme_2_el_tablero_din\u00e1mico_entrega_final_dashboard_dinamico",
+      "label": "2. El Tablero Din\u00e1mico (`entrega-final/dashboard-dinamico/`)",
       "_origin": "ast",
       "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5.3 limpieza",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
+      "norm_label": "2. el tablero dinamico (`entrega-final/dashboard-dinamico/`)",
+      "source_file": "README.md",
+      "source_location": "L85"
+    },
+    {
+      "id": "readme_2_nombre_de_base_de_datos_incorrecto",
+      "label": "2. Nombre de Base de Datos Incorrecto",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. nombre de base de datos incorrecto",
+      "source_file": "README.md",
+      "source_location": "L150"
+    },
+    {
+      "id": "readme_3_variables_de_entorno_no_configuradas_en_render",
+      "label": "3. Variables de Entorno no Configuradas en Render",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. variables de entorno no configuradas en render",
+      "source_file": "README.md",
+      "source_location": "L154"
+    },
+    {
+      "id": "readme_4_modo_de_contingencia_plan_b_inmediato",
+      "label": "4. Modo de Contingencia (Plan B Inmediato)",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. modo de contingencia (plan b inmediato)",
+      "source_file": "README.md",
+      "source_location": "L163"
+    },
+    {
+      "id": "readme_bases_de_datos_avanzadas_trabajo_pr\u00e1ctico_integrador_y_tablero_anal\u00edtico_en_la_nube",
+      "label": "Bases de Datos Avanzadas \u2014 Trabajo Pr\u00e1ctico Integrador y Tablero Anal\u00edtico en la Nube",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "bases de datos avanzadas \u2014 trabajo practico integrador y tablero analitico en la nube",
+      "source_file": "README.md",
+      "source_location": "L2"
+    },
+    {
+      "id": "readme_c\u00f3mo_trabaja_render_tras_bambalinas_ciclo_de_ejecuci\u00f3n_reactivo",
+      "label": "\ud83d\udd04 \u00bfC\u00f3mo Trabaja Render Tras Bambalinas? (Ciclo de Ejecuci\u00f3n Reactivo)",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udd04 \u00bfcomo trabaja render tras bambalinas? (ciclo de ejecucion reactivo)",
+      "source_file": "README.md",
+      "source_location": "L100"
+    },
+    {
+      "id": "readme_detalle_de_cada_paso",
+      "label": "Detalle de cada paso:",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "detalle de cada paso:",
+      "source_file": "README.md",
+      "source_location": "L125"
+    },
+    {
+      "id": "readme_diagn\u00f3stico_y_soluci\u00f3n_error_al_elegir_clever_cloud_en_render",
+      "label": "\ud83d\udee0\ufe0f Diagn\u00f3stico y Soluci\u00f3n: Error al Elegir Clever Cloud en Render",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udee0\ufe0f diagnostico y solucion: error al elegir clever cloud en render",
+      "source_file": "README.md",
+      "source_location": "L138"
+    },
+    {
+      "id": "readme_estructura_general_del_repositorio",
+      "label": "\ud83e\udded Estructura General del Repositorio",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83e\udded estructura general del repositorio",
+      "source_file": "README.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "readme_gu\u00eda_de_uso_del_dashboard_durante_la_exposici\u00f3n",
+      "label": "\ud83c\udfaf Gu\u00eda de Uso del Dashboard durante la Exposici\u00f3n",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83c\udfaf guia de uso del dashboard durante la exposicion",
+      "source_file": "README.md",
+      "source_location": "L170"
+    },
+    {
+      "id": "readme_paso_1_apertura_y_encuadre",
+      "label": "Paso 1: Apertura y Encuadre",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "paso 1: apertura y encuadre",
+      "source_file": "README.md",
+      "source_location": "L172"
+    },
+    {
+      "id": "readme_paso_2_recorrido_por_las_6_preguntas_oficiales",
+      "label": "Paso 2: Recorrido por las 6 Preguntas Oficiales",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "paso 2: recorrido por las 6 preguntas oficiales",
+      "source_file": "README.md",
+      "source_location": "L176"
+    },
+    {
+      "id": "readme_paso_3_demostraci\u00f3n_din\u00e1mica_a_requerimiento_del_profesor",
+      "label": "Paso 3: Demostraci\u00f3n Din\u00e1mica (A requerimiento del profesor)",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "paso 3: demostracion dinamica (a requerimiento del profesor)",
+      "source_file": "README.md",
       "source_location": "L184"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_4_transformaci\u00f3n_el_modelo_estrella_en_memoria",
-      "label": "5.4 Transformaci\u00f3n: el modelo estrella en memoria",
+      "id": "readme_paso_4_consola_sql_libre_para_preguntas_sorpresa",
+      "label": "Paso 4: Consola SQL Libre para Preguntas Sorpresa",
       "_origin": "ast",
       "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5.4 transformacion: el modelo estrella en memoria",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L199"
+      "norm_label": "paso 4: consola sql libre para preguntas sorpresa",
+      "source_file": "README.md",
+      "source_location": "L189"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_5_carga_en_mysql",
-      "label": "5.5 Carga en MySQL",
+      "id": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "label": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "_origin": "ast",
       "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5.5 carga en mysql",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L211"
+      "norm_label": "proyecto data warehouse: competencia de futbol (metodologia hefesto v2)",
+      "source_file": "README.md",
+      "source_location": "L1"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_6_verificaci\u00f3n",
-      "label": "5.6 Verificaci\u00f3n",
+      "id": "readme_qu\u00e9_hace_cada_cosa_en_el_proyecto",
+      "label": "\u2699\ufe0f \u00bfQu\u00e9 Hace Cada Cosa en el Proyecto?",
       "_origin": "ast",
       "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community_name": "Proyecto Data Warehouse: Competencia de F\u00fatbol (Metodolog\u00eda HEFESTO v2)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5.6 verificacion",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L217"
+      "norm_label": "\u2699\ufe0f \u00bfque hace cada cosa en el proyecto?",
+      "source_file": "README.md",
+      "source_location": "L75"
     },
     {
-      "id": "paso_4_explicacion_etl_python_5_notebook_1_01_carga_dw_ipynb_paso_por_paso",
-      "label": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "id": "entrega_final_dashboard_dinamico_readme",
+      "label": "dashboard-dinamico/README.md",
       "_origin": "ast",
-      "community": 22,
-      "community_name": "5. Notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "dashboard-dinamico/readme.md",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_1_la_base_de_datos_en_clever_cloud_est\u00e1_vac\u00eda_a\u00fan_no_tiene_las_tablas",
+      "label": "1. La Base de Datos en Clever Cloud est\u00e1 vac\u00eda (A\u00fan no tiene las tablas)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5. notebook 1 \u2014 `01_carga_dw.ipynb`, paso por paso",
-      "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L151"
+      "norm_label": "1. la base de datos en clever cloud esta vacia (aun no tiene las tablas)",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L43"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_2_nombre_de_base_de_datos_incorrecto",
+      "label": "2. Nombre de Base de Datos Incorrecto",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. nombre de base de datos incorrecto",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L51"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_3_plan_b_modo_contingencia_offline",
+      "label": "3. Plan B: Modo Contingencia Offline",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. plan b: modo contingencia offline",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L55"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_aplicaci\u00f3n_web_interactiva_en_streamlit_plotly_render_clever_cloud_mysql",
+      "label": "Aplicaci\u00f3n Web Interactiva en Streamlit + Plotly (Render & Clever Cloud MySQL)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "aplicacion web interactiva en streamlit + plotly (render & clever cloud mysql)",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L2"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_archivos_de_esta_carpeta",
+      "label": "\ud83d\udcc1 Archivos de esta Carpeta",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udcc1 archivos de esta carpeta",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L113"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_c\u00f3mo_trabaja_render_tras_bambalinas_al_filtrar_o_cambiar_consultas",
+      "label": "\ud83d\udd04 \u00bfC\u00f3mo Trabaja Render Tras Bambalinas al Filtrar o Cambiar Consultas?",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udd04 \u00bfcomo trabaja render tras bambalinas al filtrar o cambiar consultas?",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L62"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_c\u00f3mo_usar_el_tablero_en_la_exposici\u00f3n_frente_al_profesor",
+      "label": "\ud83d\udcd6 C\u00f3mo Usar el Tablero en la Exposici\u00f3n Frente al Profesor",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udcd6 como usar el tablero en la exposicion frente al profesor",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L97"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
+      "label": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dashboard dinamico para la exposicion final en clase",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_inicio_r\u00e1pido_en_2_minutos",
+      "label": "\u26a1 Inicio R\u00e1pido (En 2 Minutos)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u26a1 inicio rapido (en 2 minutos)",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_opci\u00f3n_1_ejecuci\u00f3n_local_en_tu_computadora",
+      "label": "Opci\u00f3n 1: Ejecuci\u00f3n Local en tu Computadora",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "opcion 1: ejecucion local en tu computadora",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_opci\u00f3n_2_despliegue_en_la_nube_clever_cloud_render",
+      "label": "Opci\u00f3n 2: Despliegue en la Nube (Clever Cloud + Render)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "opcion 2: despliegue en la nube (clever cloud + render)",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L24"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_readme_soluci\u00f3n_al_error_de_clever_cloud_en_render",
+      "label": "\ud83d\udea8 Soluci\u00f3n al Error de Clever Cloud en Render",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udea8 solucion al error de clever cloud en render",
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_app",
+      "label": "app.py",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "app.py",
+      "source_file": "entrega-final/dashboard-dinamico/app.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_consultas_base",
+      "label": "consultas_base.py",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "consultas_base.py",
+      "source_file": "entrega-final/dashboard-dinamico/consultas_base.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_app_rationale_1",
+      "label": "Tablero Anal\u00edtico Din\u00e1mico \u2014 Data Mart de Competencia de F\u00fatbol (HEFESTO v2)\u2026",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "tablero analitico dinamico \u2014 data mart de competencia de futbol (hefesto v2)...",
+      "source_file": "entrega-final/dashboard-dinamico/app.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "entrega_final_dashboard_dinamico_consultas_base_rationale_1",
+      "label": "Definici\u00f3n y cat\u00e1logo modular de las 12 preguntas de negocio oficiales\u2026",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "definicion y catalogo modular de las 12 preguntas de negocio oficiales...",
+      "source_file": "entrega-final/dashboard-dinamico/consultas_base.py",
+      "source_location": "L1"
     },
     {
       "id": "resumen_para_el_grupo",
@@ -1916,90 +2335,6 @@
       "norm_label": "manual_exposicion_y_despliegue.md",
       "source_file": "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md",
       "source_location": "L1"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_readme",
-      "label": "dashboard-dinamico/README.md",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Entrega Final: Dashboard sobre el Modelo Estrella \u2014 Gu\u00eda del Entregable",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "dashboard-dinamico/readme.md",
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_readme_archivos_de_esta_carpeta",
-      "label": "\ud83d\udcc1 Archivos de esta Carpeta",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Entrega Final: Dashboard sobre el Modelo Estrella \u2014 Gu\u00eda del Entregable",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\ud83d\udcc1 archivos de esta carpeta",
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L43"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
-      "label": "Dashboard Din\u00e1mico para la Exposici\u00f3n Final en Clase",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Entrega Final: Dashboard sobre el Modelo Estrella \u2014 Gu\u00eda del Entregable",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "dashboard dinamico para la exposicion final en clase",
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_readme_documentaci\u00f3n_completa_para_la_defensa",
-      "label": "\ud83d\udcda Documentaci\u00f3n Completa para la Defensa",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Entrega Final: Dashboard sobre el Modelo Estrella \u2014 Gu\u00eda del Entregable",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\ud83d\udcda documentacion completa para la defensa",
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L35"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_readme_inicio_r\u00e1pido_en_2_minutos",
-      "label": "\u26a1 Inicio R\u00e1pido (En 2 Minutos)",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Entrega Final: Dashboard sobre el Modelo Estrella \u2014 Gu\u00eda del Entregable",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u26a1 inicio rapido (en 2 minutos)",
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L7"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_readme_opci\u00f3n_1_ejecuci\u00f3n_local_en_tu_computadora",
-      "label": "Opci\u00f3n 1: Ejecuci\u00f3n Local en tu Computadora",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Entrega Final: Dashboard sobre el Modelo Estrella \u2014 Gu\u00eda del Entregable",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "opcion 1: ejecucion local en tu computadora",
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "entrega_final_dashboard_dinamico_readme_opci\u00f3n_2_despliegue_en_la_nube_clever_cloud_render",
-      "label": "Opci\u00f3n 2: Despliegue en la Nube (Clever Cloud + Render)",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Entrega Final: Dashboard sobre el Modelo Estrella \u2014 Gu\u00eda del Entregable",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "opcion 2: despliegue en la nube (clever cloud + render)",
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L23"
     },
     {
       "id": "entrega_final_readme",
@@ -2591,7 +2926,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L134",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
@@ -2603,7 +2938,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L135",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
@@ -2615,7 +2950,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L142",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -2627,7 +2962,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L143",
+      "source_location": "L180",
       "weight": 1.0
     },
     {
@@ -2639,7 +2974,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L86",
+      "source_location": "L105",
       "weight": 1.0
     },
     {
@@ -2651,7 +2986,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L87",
+      "source_location": "L106",
       "weight": 1.0
     },
     {
@@ -2663,7 +2998,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L98",
+      "source_location": "L124",
       "weight": 1.0
     },
     {
@@ -2922,69 +3257,14 @@
       "weight": 1.0
     },
     {
-      "source": "entrega_final_dashboard_dinamico_conexion",
-      "target": "entrega_final_dashboard_dinamico_conexion_adaptar_sql_para_sqlite",
+      "source": "entrega_final_dashboard_dinamico_app",
+      "target": "entrega_final_dashboard_dinamico_app_cb",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L109",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion",
-      "target": "entrega_final_dashboard_dinamico_conexion_ejecutar_consulta",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L129",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion",
-      "target": "entrega_final_dashboard_dinamico_conexion_stddevsamp",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion",
-      "target": "entrega_final_dashboard_dinamico_conexion_obtener_config_por_defecto",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L40",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion",
-      "target": "entrega_final_dashboard_dinamico_conexion_crear_engine_mysql",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L51",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion",
-      "target": "entrega_final_dashboard_dinamico_conexion_preparar_conexion_sqlite",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L68",
+      "source_file": "entrega-final/dashboard-dinamico/app.py",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -2995,7 +3275,84 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L81",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion",
+      "target": "entrega_final_dashboard_dinamico_conexion_adaptar_sql_para_sqlite",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion",
+      "target": "entrega_final_dashboard_dinamico_conexion_ejecutar_consulta",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion",
+      "target": "entrega_final_dashboard_dinamico_conexion_cargar_data_mart_en_clevercloud",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L190",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion",
+      "target": "entrega_final_dashboard_dinamico_conexion_stddevsamp",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion",
+      "target": "entrega_final_dashboard_dinamico_conexion_obtener_config_por_defecto",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion",
+      "target": "entrega_final_dashboard_dinamico_conexion_crear_engine_mysql",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion",
+      "target": "entrega_final_dashboard_dinamico_conexion_preparar_conexion_sqlite",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -3385,24 +3742,46 @@
     },
     {
       "source": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
-      "target": "entrega_final_dashboard_dinamico_readme_documentaci\u00f3n_completa_para_la_defensa",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L35",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
       "target": "entrega_final_dashboard_dinamico_readme_archivos_de_esta_carpeta",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L43",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
+      "target": "entrega_final_dashboard_dinamico_readme_aplicaci\u00f3n_web_interactiva_en_streamlit_plotly_render_clever_cloud_mysql",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
+      "target": "entrega_final_dashboard_dinamico_readme_soluci\u00f3n_al_error_de_clever_cloud_en_render",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
+      "target": "entrega_final_dashboard_dinamico_readme_c\u00f3mo_trabaja_render_tras_bambalinas_al_filtrar_o_cambiar_consultas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -3413,18 +3792,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
-      "source": "entrega_final_dashboard_dinamico_readme_inicio_r\u00e1pido_en_2_minutos",
-      "target": "entrega_final_dashboard_dinamico_readme_opci\u00f3n_2_despliegue_en_la_nube_clever_cloud_render",
+      "source": "entrega_final_dashboard_dinamico_readme_dashboard_din\u00e1mico_para_la_exposici\u00f3n_final_en_clase",
+      "target": "entrega_final_dashboard_dinamico_readme_c\u00f3mo_usar_el_tablero_en_la_exposici\u00f3n_frente_al_profesor",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L23",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -3435,7 +3814,51 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L9",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_readme_inicio_r\u00e1pido_en_2_minutos",
+      "target": "entrega_final_dashboard_dinamico_readme_opci\u00f3n_2_despliegue_en_la_nube_clever_cloud_render",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_readme_soluci\u00f3n_al_error_de_clever_cloud_en_render",
+      "target": "entrega_final_dashboard_dinamico_readme_1_la_base_de_datos_en_clever_cloud_est\u00e1_vac\u00eda_a\u00fan_no_tiene_las_tablas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_readme_soluci\u00f3n_al_error_de_clever_cloud_en_render",
+      "target": "entrega_final_dashboard_dinamico_readme_2_nombre_de_base_de_datos_incorrecto",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_readme_soluci\u00f3n_al_error_de_clever_cloud_en_render",
+      "target": "entrega_final_dashboard_dinamico_readme_3_plan_b_modo_contingencia_offline",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/README.md",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -4348,7 +4771,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L217",
+      "source_location": "L223",
       "weight": 1.0
     },
     {
@@ -4359,7 +4782,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L233",
+      "source_location": "L239",
       "weight": 1.0
     },
     {
@@ -4370,7 +4793,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L242",
+      "source_location": "L248",
       "weight": 1.0
     },
     {
@@ -4403,7 +4826,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L231",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -4425,7 +4848,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L265",
+      "source_location": "L271",
       "weight": 1.0
     },
     {
@@ -4436,7 +4859,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L276",
+      "source_location": "L282",
       "weight": 1.0
     },
     {
@@ -4447,7 +4870,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/EXPLICACION_ETL_PYTHON.md",
-      "source_location": "L290",
+      "source_location": "L296",
       "weight": 1.0
     },
     {
@@ -4513,7 +4936,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "paso-4/README.md",
-      "source_location": "L57",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -4525,6 +4948,204 @@
       "confidence_score": 1.0,
       "source_file": "paso-4/README.md",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_c\u00f3mo_trabaja_render_tras_bambalinas_ciclo_de_ejecuci\u00f3n_reactivo",
+      "target": "readme_detalle_de_cada_paso",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_diagn\u00f3stico_y_soluci\u00f3n_error_al_elegir_clever_cloud_en_render",
+      "target": "readme_1_la_base_de_datos_en_clever_cloud_est\u00e1_vac\u00eda_falta_de_tablas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_diagn\u00f3stico_y_soluci\u00f3n_error_al_elegir_clever_cloud_en_render",
+      "target": "readme_2_nombre_de_base_de_datos_incorrecto",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_diagn\u00f3stico_y_soluci\u00f3n_error_al_elegir_clever_cloud_en_render",
+      "target": "readme_3_variables_de_entorno_no_configuradas_en_render",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_diagn\u00f3stico_y_soluci\u00f3n_error_al_elegir_clever_cloud_en_render",
+      "target": "readme_4_modo_de_contingencia_plan_b_inmediato",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_gu\u00eda_de_uso_del_dashboard_durante_la_exposici\u00f3n",
+      "target": "readme_paso_1_apertura_y_encuadre",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L172",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_gu\u00eda_de_uso_del_dashboard_durante_la_exposici\u00f3n",
+      "target": "readme_paso_2_recorrido_por_las_6_preguntas_oficiales",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_gu\u00eda_de_uso_del_dashboard_durante_la_exposici\u00f3n",
+      "target": "readme_paso_3_demostraci\u00f3n_din\u00e1mica_a_requerimiento_del_profesor",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L184",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_gu\u00eda_de_uso_del_dashboard_durante_la_exposici\u00f3n",
+      "target": "readme_paso_4_consola_sql_libre_para_preguntas_sorpresa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L189",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "target": "readme_estructura_general_del_repositorio",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "target": "readme_c\u00f3mo_trabaja_render_tras_bambalinas_ciclo_de_ejecuci\u00f3n_reactivo",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "target": "readme_diagn\u00f3stico_y_soluci\u00f3n_error_al_elegir_clever_cloud_en_render",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "target": "readme_gu\u00eda_de_uso_del_dashboard_durante_la_exposici\u00f3n",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "target": "readme_bases_de_datos_avanzadas_trabajo_pr\u00e1ctico_integrador_y_tablero_anal\u00edtico_en_la_nube",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_proyecto_data_warehouse_competencia_de_f\u00fatbol_metodolog\u00eda_hefesto_v2",
+      "target": "readme_qu\u00e9_hace_cada_cosa_en_el_proyecto",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_qu\u00e9_hace_cada_cosa_en_el_proyecto",
+      "target": "readme_1_el_proceso_etl_y_el_data_mart_pasos_1_a_4",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_qu\u00e9_hace_cada_cosa_en_el_proyecto",
+      "target": "readme_2_el_tablero_din\u00e1mico_entrega_final_dashboard_dinamico",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -4711,7 +5332,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -4722,7 +5343,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -4733,7 +5354,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -4759,80 +5380,91 @@
       "weight": 1.0
     },
     {
-      "source": "entrega_final_dashboard_dinamico_conexion_rationale_110",
-      "target": "entrega_final_dashboard_dinamico_conexion_adaptar_sql_para_sqlite",
-      "relation": "rationale_for",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L110",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion_rationale_130",
-      "target": "entrega_final_dashboard_dinamico_conexion_ejecutar_consulta",
-      "relation": "rationale_for",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L130",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion_rationale_20",
-      "target": "entrega_final_dashboard_dinamico_conexion_stddevsamp",
-      "relation": "rationale_for",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion_rationale_41",
-      "target": "entrega_final_dashboard_dinamico_conexion_obtener_config_por_defecto",
-      "relation": "rationale_for",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L41",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion_rationale_52",
-      "target": "entrega_final_dashboard_dinamico_conexion_crear_engine_mysql",
-      "relation": "rationale_for",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L52",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion_rationale_69",
-      "target": "entrega_final_dashboard_dinamico_conexion_preparar_conexion_sqlite",
-      "relation": "rationale_for",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L69",
-      "weight": 1.0
-    },
-    {
-      "source": "entrega_final_dashboard_dinamico_conexion_rationale_82",
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_101",
       "target": "entrega_final_dashboard_dinamico_conexion_probar_conexion",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "entrega-final/dashboard-dinamico/conexion.py",
-      "source_location": "L82",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_147",
+      "target": "entrega_final_dashboard_dinamico_conexion_adaptar_sql_para_sqlite",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_167",
+      "target": "entrega_final_dashboard_dinamico_conexion_ejecutar_consulta",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_191",
+      "target": "entrega_final_dashboard_dinamico_conexion_cargar_data_mart_en_clevercloud",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L191",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_21",
+      "target": "entrega_final_dashboard_dinamico_conexion_stddevsamp",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_42",
+      "target": "entrega_final_dashboard_dinamico_conexion_obtener_config_por_defecto",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_53",
+      "target": "entrega_final_dashboard_dinamico_conexion_crear_engine_mysql",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "entrega_final_dashboard_dinamico_conexion_rationale_88",
+      "target": "entrega_final_dashboard_dinamico_conexion_preparar_conexion_sqlite",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entrega-final/dashboard-dinamico/conexion.py",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -4913,17 +5545,6 @@
       "weight": 1.0
     },
     {
-      "source": "entrega_final_dashboard_dinamico_readme",
-      "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entrega-final/dashboard-dinamico/README.md",
-      "source_location": "L39",
-      "weight": 1.0
-    },
-    {
       "source": "entrega_final_readme",
       "target": "entrega_final_dashboard_dinamico_manual_exposicion_y_despliegue",
       "relation": "references",
@@ -4936,5 +5557,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6a03acb01b58c07440e850003894d33a5e760ccb"
+  "built_at_commit": "c42e113b2c2e84be6b885d03ea24564581f315e5"
 }

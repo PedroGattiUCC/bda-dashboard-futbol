@@ -93,15 +93,43 @@ with st.sidebar:
 
     col_btn_test, _ = st.columns([1, 0.1])
     if col_btn_test.button("⚡ Test Conexión", use_container_width=True):
-        with st.spinner("Probando..."):
-            ok, msg = conexion.probar_conexion(
+        with st.spinner("Probando conexión..."):
+            ok, msg, necesita_migrar = conexion.probar_conexion(
                 st.session_state["tipo_origen"],
                 st.session_state["cfg_mysql"]
             )
-            if ok:
-                st.success(msg)
+            st.session_state["test_status"] = (ok, msg, necesita_migrar)
+
+    if "test_status" in st.session_state:
+        ok, msg, necesita_migrar = st.session_state["test_status"]
+        if ok:
+            st.success(msg)
+        else:
+            if necesita_migrar:
+                st.warning(msg)
+                st.markdown("👇 **Tu base en Clever Cloud está vacía. Hacé clic para poblarla:**")
+                if st.button("🚀 Cargar Data Mart en Clever Cloud (1 Clic)", type="primary", use_container_width=True):
+                    prog_bar = st.progress(0)
+                    prog_lbl = st.empty()
+                    def cb(texto, val):
+                        prog_lbl.caption(texto)
+                        prog_bar.progress(val)
+
+                    ok_mig, msg_mig = conexion.cargar_data_mart_en_clevercloud(st.session_state["cfg_mysql"], cb)
+                    if ok_mig:
+                        st.success(msg_mig)
+                        del st.session_state["test_status"]
+                        time.sleep(1)
+                        st.rerun()
+                    else:
+                        st.error(msg_mig)
             else:
                 st.error(msg)
+                if st.button("👉 Conmutar a Modo Offline (SQLite)", use_container_width=True):
+                    st.session_state["tipo_origen"] = "sqlite"
+                    if "test_status" in st.session_state:
+                        del st.session_state["test_status"]
+                    st.rerun()
 
     st.divider()
     ver_complementarias = st.checkbox("🔍 Habilitar preguntas 7 a 12 (opcional)", value=False)
