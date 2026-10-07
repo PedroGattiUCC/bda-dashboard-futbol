@@ -24,9 +24,9 @@
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/app.py": {
-    "mtime": 1791376094.0050733,
-    "seen": 1791384586.9697592,
-    "ast_hash": "da85750f96de4cc28b80dbe200cc1b81",
+    "mtime": 1791415429.216674,
+    "seen": 1791415499.0295825,
+    "ast_hash": "ee4ebe36a45cf669bda0a38fe50b7a02",
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/conexion.py": {
@@ -36,9 +36,9 @@
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/consultas_base.py": {
-    "mtime": 1791375840.4202871,
-    "seen": 1791384586.9697764,
-    "ast_hash": "c4a13f8e3874352ac15f7b74fff32db9",
+    "mtime": 1791415355.090594,
+    "seen": 1791415499.0299854,
+    "ast_hash": "2626772d8e62684f9aae2e49da518d3e",
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/exportar_dump_sql.py": {
@@ -84,9 +84,9 @@
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/MANUAL_EXPOSICION_Y_DESPLIEGUE.md": {
-    "mtime": 1791384280.8097732,
-    "seen": 1791384586.9703581,
-    "ast_hash": "5c72ced4fbb39db41479285200567cdf",
+    "mtime": 1791415481.7384205,
+    "seen": 1791415499.0321481,
+    "ast_hash": "c43e109f12e830ea3c61fac1292f268a",
     "semantic_hash": ""
   },
   "entrega-final/dashboard-dinamico/README.md": {

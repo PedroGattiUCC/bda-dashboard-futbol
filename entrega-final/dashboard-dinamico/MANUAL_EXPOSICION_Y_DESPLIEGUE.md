@@ -190,21 +190,30 @@ Esta sección es un **guión táctico** para cuando el grupo esté al frente en 
 
 ---
 
-### 📊 Demostración de las Preguntas Oficiales (Minutos 2 a 5)
-Recorrer 2 o 3 preguntas clave y **hacer interactuar la aplicación**:
+### 📊 Demostración de las 6 Preguntas Oficiales (Minutos 2 a 5)
+Recorrer las preguntas de negocio oficiales y **destacar el panel de múltiples gráficos por pregunta**:
 
 #### Caso A: Pregunta 1 (Evolución de Elo — Nottingham Forest)
-- Mostrar el gráfico oficial: Nottingham Forest subió +314 puntos de Elo entre 2021 y 2026.
+- **KPIs y Gráficos:** Muestra la curva de Elo promedio anual con banda de rango min-max, el desglose de partidos disputados y la volatilidad anual. Nottingham Forest subió +314 puntos (+21,4 %).
 - **Acción dinámica en vivo:**
-  > *"Si quisiéramos evaluar a otro equipo, como por ejemplo **Arsenal**, simplemente cambiamos el nombre en el selector..."*
-- Escribir `Arsenal` o `Real Madrid` y cambiar el slider de años de 5 a 10. La curva se actualiza en 200 milisegundos en pantalla.
+  > *"Si quisiéramos evaluar a otro equipo, como por ejemplo **Arsenal** o **Real Madrid**, simplemente cambiamos el nombre en el selector..."*
+- Escribir `Arsenal` o cambiar el slider de años. La curva, la banda min-max y los partidos se recalculan al instante.
 
 #### Caso B: Pregunta 2 (Historial de Clásicos)
-- Mostrar la comparativa de los 6 clásicos europeos.
-- Activar el checkbox **"Comparar enfrentamiento libre entre 2 clubes"** y elegir, por ejemplo, `Liverpool` vs `Chelsea`. El gráfico de barras apiladas recalcula victorias, empates y derrotas en el momento.
+- **Gráficos:** Barras apiladas de % victorias/empates y volumen histórico de partidos por clásico.
+- **Acción dinámica en vivo:** Activar el checkbox **"Comparar enfrentamiento libre entre 2 clubes"** y elegir `Liverpool` vs `Chelsea` para ver el gráfico de dona de resultados directos.
 
-#### Caso C: Pregunta 3 a 12
-- Demostrar cómo se pueden cambiar los umbrales de partidos mínimos, ordenar por tarjetas amarillas o rojas (Pregunta 5 y 11), o filtrar por temporadas (Pregunta 12).
+#### Caso C: Pregunta 3 (Ventaja de Localía)
+- **Gráficos:** Ranking de ventaja neta (+16,9 pp promedio), dona continental (45 % local vs 28,1 % visitante) y comparativa de goles local vs visitante por liga.
+
+#### Caso D: Pregunta 4 (Paridad de Ligas)
+- **Gráficos:** Ranking de desvío de brecha Elo (menor = más pareja), comparativa de % de empates y el cuadrante de paridad (brecha Elo media vs empates), demostrando la paridad de las segundas divisiones.
+
+#### Caso E: Pregunta 5 (Disciplina y Tarjetas por Liga)
+- **Gráficos:** Ranking de amarillas, ranking de rojas y matriz de fricción disciplinaria (mostrando el clúster ibérico con >5 tarjetas por partido frente al fútbol inglés y alemán con ~3).
+
+#### Caso F: Pregunta 6 (Mejores Visitantes en 5 Años)
+- **Gráficos:** Ranking Top 15 de efectividad a domicilio (Porto 71,8 %, PSV 70,9 %, Celtic 70,7 %), balance goleador visitante y matriz de efectividad.
 
 ---
 

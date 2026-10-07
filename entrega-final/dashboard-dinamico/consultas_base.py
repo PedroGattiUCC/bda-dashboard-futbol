@@ -242,6 +242,8 @@ SELECT CONCAT(d.codigo_division, ' - ', d.nombre_liga)                    AS lig
        ROUND(100.0 * AVG(f.victoria_local), 1)                              AS pct_local,
        ROUND(100.0 * AVG(f.victoria_visitante), 1)                          AS pct_visitante,
        ROUND(100.0 * (AVG(f.victoria_local) - AVG(f.victoria_visitante)), 1) AS ventaja_pp,
+       ROUND(AVG(f.goles_local), 2)                                         AS goles_local_prom,
+       ROUND(AVG(f.goles_visitante), 2)                                     AS goles_visitante_prom,
        ROUND(AVG(f.goles_local) - AVG(f.goles_visitante), 2)                AS dif_goles
 FROM FACT_COMPETENCIA f
 JOIN DIM_DIVISION d ON d.id_division = f.id_division
@@ -532,3 +534,10 @@ ORDER BY {params.get("orden", "elo_maximo")} DESC;
 """
     },
 ]
+
+# Las 6 preguntas de negocio oficiales elegidas para la Entrega Final y Exposición
+PREGUNTAS_OFICIALES = [p for p in PREGUNTAS_CATALOGO if p["id"] <= 6]
+
+# Preguntas complementarias (7 a 12) disponibles por si el docente las solicita en la defensa
+PREGUNTAS_COMPLEMENTARIAS = [p for p in PREGUNTAS_CATALOGO if p["id"] > 6]
+

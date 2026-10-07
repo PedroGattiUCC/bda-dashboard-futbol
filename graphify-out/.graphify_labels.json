@@ -8,7 +8,7 @@
   "6": "generar_dashboard.py",
   "7": "Paso 3: Modelo Lógico del Data Warehouse — Guía del Entregable",
   "8": "construir_sqlite",
-  "9": "7. Estrategia y Guión para la Exposición Oral en Clase (Frente al Docente)",
+  "9": "📊 Demostración de las 6 Preguntas Oficiales (Minutos 2 a 5)",
   "10": "GUÍA DE TRABAJO PRÁCTICO #2 — DATA WAREHOUSE CON METODOLOGÍA HEFESTO",
   "11": "Paso 2: Análisis de la Fuente de Datos — Guía del Entregable",
   "12": "Paso 4: Integración de Datos (Metodología HEFESTO)",
@@ -20,5 +20,6 @@
   "18": "rules/graphify.md",
   "19": "workflows/graphify.md",
   "20": "fuente.md",
-  "21": "verificacion_nombres_equipos.py"
+  "21": "verificacion_nombres_equipos.py",
+  "22": "5. Notebook 1 — `01_carga_dw.ipynb`, paso por paso"
 }
