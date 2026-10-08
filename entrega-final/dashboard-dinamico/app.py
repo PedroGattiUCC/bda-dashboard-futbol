@@ -79,26 +79,67 @@ with st.sidebar:
     )
     st.session_state["tipo_origen"] = tipo_sel
 
-    if tipo_sel in ("clever", "local"):
-        with st.expander("🔧 Credenciales MySQL", expanded=False):
-            host = st.text_input("Host:", value=st.session_state["cfg_mysql"].get("host", "localhost"))
-            port = st.number_input("Puerto:", value=int(st.session_state["cfg_mysql"].get("port", 3306)), step=1)
-            user = st.text_input("Usuario:", value=st.session_state["cfg_mysql"].get("user", "root"))
-            password = st.text_input("Contraseña:", value=st.session_state["cfg_mysql"].get("password", ""), type="password")
-            database = st.text_input("Base de datos:", value=st.session_state["cfg_mysql"].get("database", "dw_competencia_futbol"))
-            
-            st.session_state["cfg_mysql"] = {
-                "host": host, "port": port, "user": user, "password": password, "database": database
-            }
+    if tipo_sel == "clever":
+        es_clever_config = conexion.es_config_clever_valida(st.session_state["cfg_mysql"])
+        
+        with st.expander("☁️ Configurar Clever Cloud MySQL", expanded=not es_clever_config):
+            st.caption("Copiá estos datos desde tu add-on MySQL en clever-cloud.com:")
+            with st.form("form_credenciales_clever"):
+                cur_host = st.session_state["cfg_mysql"].get("host", "")
+                if cur_host in ("localhost", "127.0.0.1"):
+                    cur_host = ""
+                cur_user = st.session_state["cfg_mysql"].get("user", "")
+                if cur_user == "root":
+                    cur_user = ""
+                cur_db = st.session_state["cfg_mysql"].get("database", "")
+                if cur_db == "dw_competencia_futbol":
+                    cur_db = ""
 
-    col_btn_test, _ = st.columns([1, 0.1])
-    if col_btn_test.button("⚡ Test Conexión", use_container_width=True):
-        with st.spinner("Probando conexión..."):
-            ok, msg, necesita_migrar = conexion.probar_conexion(
-                st.session_state["tipo_origen"],
-                st.session_state["cfg_mysql"]
-            )
-            st.session_state["test_status"] = (ok, msg, necesita_migrar)
+                f_host = st.text_input("Host:", value=cur_host, placeholder="bxxxx-mysql.services.clever-cloud.com")
+                f_port = st.number_input("Puerto:", value=int(st.session_state["cfg_mysql"].get("port", 3306)), step=1)
+                f_user = st.text_input("Usuario:", value=cur_user, placeholder="uxxxxxxxx")
+                f_pass = st.text_input("Contraseña:", value=st.session_state["cfg_mysql"].get("password", ""), type="password", placeholder="Contraseña de Clever Cloud")
+                f_db = st.text_input("Base de datos:", value=cur_db, placeholder="bxxxxxxxx")
+                
+                submitted = st.form_submit_button("💾 Guardar y Conectar", type="primary", use_container_width=True)
+                if submitted:
+                    st.session_state["cfg_mysql"] = {
+                        "host": f_host.strip(),
+                        "port": int(f_port),
+                        "user": f_user.strip(),
+                        "password": f_pass.strip(),
+                        "database": f_db.strip()
+                    }
+                    with st.spinner("Verificando credenciales en Clever Cloud..."):
+                        ok, msg, necesita_migrar = conexion.probar_conexion("clever", st.session_state["cfg_mysql"])
+                        st.session_state["test_status"] = (ok, msg, necesita_migrar)
+                    st.rerun()
+
+    elif tipo_sel == "local":
+        with st.expander("💻 Configuración MySQL Local", expanded=False):
+            with st.form("form_credenciales_local"):
+                f_host = st.text_input("Host:", value=st.session_state["cfg_mysql"].get("host", "localhost"))
+                f_port = st.number_input("Puerto:", value=int(st.session_state["cfg_mysql"].get("port", 3306)), step=1)
+                f_user = st.text_input("Usuario:", value=st.session_state["cfg_mysql"].get("user", "root"))
+                f_pass = st.text_input("Contraseña:", value=st.session_state["cfg_mysql"].get("password", ""), type="password")
+                f_db = st.text_input("Base de datos:", value=st.session_state["cfg_mysql"].get("database", "dw_competencia_futbol"))
+                sub_local = st.form_submit_button("💾 Guardar MySQL Local", use_container_width=True)
+                if sub_local:
+                    st.session_state["cfg_mysql"] = {
+                        "host": f_host.strip(), "port": int(f_port), "user": f_user.strip(), "password": f_pass.strip(), "database": f_db.strip()
+                    }
+                    ok, msg, necesita_migrar = conexion.probar_conexion("local", st.session_state["cfg_mysql"])
+                    st.session_state["test_status"] = (ok, msg, necesita_migrar)
+                    st.rerun()
+
+    if tipo_sel in ("clever", "local"):
+        if st.button("⚡ Test Conexión", use_container_width=True):
+            with st.spinner("Probando conexión..."):
+                ok, msg, necesita_migrar = conexion.probar_conexion(
+                    st.session_state["tipo_origen"],
+                    st.session_state["cfg_mysql"]
+                )
+                st.session_state["test_status"] = (ok, msg, necesita_migrar)
 
     if "test_status" in st.session_state:
         ok, msg, necesita_migrar = st.session_state["test_status"]
@@ -125,11 +166,12 @@ with st.sidebar:
                         st.error(msg_mig)
             else:
                 st.error(msg)
-                if st.button("👉 Conmutar a Modo Offline (SQLite)", use_container_width=True):
-                    st.session_state["tipo_origen"] = "sqlite"
-                    if "test_status" in st.session_state:
-                        del st.session_state["test_status"]
-                    st.rerun()
+                if tipo_sel != "sqlite":
+                    if st.button("👉 Conmutar a Modo Offline (SQLite)", use_container_width=True):
+                        st.session_state["tipo_origen"] = "sqlite"
+                        if "test_status" in st.session_state:
+                            del st.session_state["test_status"]
+                        st.rerun()
 
     st.divider()
     ver_complementarias = st.checkbox("🔍 Habilitar preguntas 7 a 12 (opcional)", value=False)
@@ -150,12 +192,16 @@ with col_header:
     st.caption("Bases de Datos Avanzadas | Defensa Oral Final | Metodología HEFESTO v2")
 
 with col_badge:
-    if st.session_state["tipo_origen"] == "clever":
-        st.success("🟢 **Clever Cloud MySQL** (Nube)")
-    elif st.session_state["tipo_origen"] == "local":
+    origen_actual = st.session_state["tipo_origen"]
+    if origen_actual == "clever":
+        if conexion.es_config_clever_valida(st.session_state["cfg_mysql"]):
+            st.success("🟢 **Clever Cloud MySQL** (Nube)")
+        else:
+            st.warning("🛡️ **Offline Activo** (Clever Cloud en espera)")
+    elif origen_actual == "local":
         st.info("💻 **MySQL Local** (`localhost:3306`)")
     else:
-        st.warning("🛡️ **Offline Activo** (132.256 partidos)")
+        st.success("🛡️ **Offline Activo** (132.256 partidos)")
 
 st.write("")
 
@@ -252,8 +298,20 @@ if modo == "📊 6 Preguntas Oficiales (Entrega Final)":
         df, duracion, error = conexion.ejecutar_consulta(
             sql_base,
             tipo_origen=st.session_state["tipo_origen"],
-            config=st.session_state["cfg_mysql"]
+            config=st.session_state["cfg_mysql"],
+            permitir_fallback=True
         )
+
+    origen_utilizado = df.attrs.get("origen", st.session_state["tipo_origen"])
+    error_previo = df.attrs.get("error_previo")
+
+    if origen_utilizado == "sqlite_fallback":
+        if "CREDENCIALES_PENDIENTES" in str(error_previo):
+            st.info("ℹ️ **Clever Cloud seleccionado:** Completá tus credenciales en el menú lateral para conectar tu base en la nube. Mientras tanto, el tablero se visualiza con los **132.256 partidos de contingencia (SQLite)**.")
+        elif "doesn't exist" in str(error_previo).lower() or "no existe" in str(error_previo).lower():
+            st.warning("⚠️ **Base en Clever Cloud vacía:** La tabla `FACT_COMPETENCIA` todavía no existe en Clever Cloud. Hacé clic en **'🚀 Cargar Data Mart en Clever Cloud (1 Clic)'** en la barra lateral para poblarla en 1 clic. Mostrando datos de contingencia mientras tanto.")
+        else:
+            st.warning(f"⚠️ **Aviso de Conexión a Clever Cloud:** {error_previo}\n\n🛡️ *Mostrando automáticamente los datos de respaldo local (SQLite) para garantizar que la presentación no se interrumpa.*")
 
     if error:
         st.error(f"❌ Error al consultar la base de datos: {error}")
@@ -641,8 +699,11 @@ if modo == "📊 6 Preguntas Oficiales (Entrega Final)":
                     df_custom, d_c, err_c = conexion.ejecutar_consulta(
                         sql_editado,
                         tipo_origen=st.session_state["tipo_origen"],
-                        config=st.session_state["cfg_mysql"]
+                        config=st.session_state["cfg_mysql"],
+                        permitir_fallback=True
                     )
+                    if df_custom.attrs.get("origen") == "sqlite_fallback":
+                        st.info("🛡️ *Ejecutado sobre base de contingencia SQLite (Clever Cloud en espera).*")
                     if err_c:
                         st.error(f"Error SQL: {err_c}")
                     else:
@@ -704,8 +765,11 @@ elif modo == "💻 Consola SQL Libre (Preguntas del Docente)":
         df_l, dur_l, err_l = conexion.ejecutar_consulta(
             sql_input,
             tipo_origen=st.session_state["tipo_origen"],
-            config=st.session_state["cfg_mysql"]
+            config=st.session_state["cfg_mysql"],
+            permitir_fallback=True
         )
+        if df_l.attrs.get("origen") == "sqlite_fallback":
+            st.info("🛡️ *Ejecutado sobre base de contingencia SQLite (Clever Cloud en espera).*")
         if err_l:
             st.error(f"❌ Error SQL: {err_l}")
         elif df_l.empty:
@@ -741,8 +805,8 @@ elif modo == "🔍 Explorador del Data Mart":
     sel_t = st.selectbox("Seleccione tabla o vista:", tablas_dw)
 
     with st.spinner("Cargando..."):
-        df_cnt, _, _ = conexion.ejecutar_consulta(f"SELECT COUNT(*) AS total FROM {sel_t};", st.session_state["tipo_origen"], st.session_state["cfg_mysql"])
-        df_s, _, _ = conexion.ejecutar_consulta(f"SELECT * FROM {sel_t} LIMIT 25;", st.session_state["tipo_origen"], st.session_state["cfg_mysql"])
+        df_cnt, _, _ = conexion.ejecutar_consulta(f"SELECT COUNT(*) AS total FROM {sel_t};", st.session_state["tipo_origen"], st.session_state["cfg_mysql"], permitir_fallback=True)
+        df_s, _, _ = conexion.ejecutar_consulta(f"SELECT * FROM {sel_t} LIMIT 25;", st.session_state["tipo_origen"], st.session_state["cfg_mysql"], permitir_fallback=True)
 
     if not df_cnt.empty:
         st.metric("Total de registros", f"{df_cnt.iloc[0, 0]:,}")

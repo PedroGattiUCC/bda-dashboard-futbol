@@ -97,25 +97,54 @@ def preparar_conexion_sqlite(ruta_sqlite=None):
     return conn
 
 
+def es_config_clever_valida(config):
+    """Verifica si las credenciales ingresadas corresponden a una base remota de Clever Cloud."""
+    if not config or not isinstance(config, dict):
+        return False
+    host = str(config.get("host", "")).strip().lower()
+    user = str(config.get("user", "")).strip().lower()
+    database = str(config.get("database", "")).strip().lower()
+
+    if not host or host in ("localhost", "127.0.0.1", "0.0.0.0"):
+        return False
+    if not user or user == "root":
+        return False
+    if not database or database == "dw_competencia_futbol":
+        return False
+    return True
+
+
 def probar_conexion(tipo_origen, config=None, ruta_sqlite=None):
     """Prueba la conectividad y devuelve (exito: bool, mensaje: str, necesita_migracion: bool)."""
     t0 = time.time()
     try:
-        if tipo_origen in ("clever", "local"):
+        if tipo_origen == "clever":
             cfg = config or obtener_config_por_defecto()
+            if not es_config_clever_valida(cfg):
+                return False, "⚠️ Faltan configurar las credenciales de Clever Cloud (Host, Usuario, Contraseña y Base de Datos).", False
             engine = crear_engine_mysql(cfg)
             with engine.connect() as conn:
-                # 1. Probar conectividad básica y credenciales
                 conn.execute(text("SELECT 1"))
-                
-                # 2. Probar si existen las tablas del Data Mart
                 try:
                     total = conn.execute(text("SELECT COUNT(*) FROM FACT_COMPETENCIA")).scalar()
                     ms = int((time.time() - t0) * 1000)
-                    return True, f"✓ Conexión exitosa a MySQL ({cfg['host']}:{cfg['port']}) con {total:,} partidos en {ms} ms.", False
+                    return True, f"✓ Conexión exitosa a Clever Cloud ({cfg['host']}) con {total:,} partidos en {ms} ms.", False
                 except Exception:
                     ms = int((time.time() - t0) * 1000)
-                    return False, f"⚠️ Conectado al servidor MySQL en {ms} ms, pero la tabla 'FACT_COMPETENCIA' no existe todavía. Necesitás inicializarla.", True
+                    return False, f"⚠️ Conectado al servidor de Clever Cloud en {ms} ms, pero la base está vacía (la tabla 'FACT_COMPETENCIA' no existe todavía).", True
+
+        elif tipo_origen == "local":
+            cfg = config or obtener_config_por_defecto()
+            engine = crear_engine_mysql(cfg)
+            with engine.connect() as conn:
+                conn.execute(text("SELECT 1"))
+                try:
+                    total = conn.execute(text("SELECT COUNT(*) FROM FACT_COMPETENCIA")).scalar()
+                    ms = int((time.time() - t0) * 1000)
+                    return True, f"✓ Conexión exitosa a MySQL Local ({cfg['host']}:{cfg['port']}) con {total:,} partidos en {ms} ms.", False
+                except Exception:
+                    ms = int((time.time() - t0) * 1000)
+                    return False, f"⚠️ Conectado a MySQL Local en {ms} ms, pero la tabla 'FACT_COMPETENCIA' no existe.", True
 
         else:
             ruta = Path(ruta_sqlite or RUTA_SQLITE_DEFAULT)
@@ -131,15 +160,18 @@ def probar_conexion(tipo_origen, config=None, ruta_sqlite=None):
 
     except Exception as e:
         msg = str(e)
-        if "Access denied" in msg:
+        if "Access denied" in msg or "1045" in msg:
             return False, "❌ Error de autenticación (Access Denied): Usuario o contraseña incorrectos en Clever Cloud.", False
-        elif "Unknown database" in msg:
+        elif "Unknown database" in msg or "1049" in msg:
             db_name = config.get('database') if config else 'desconocida'
-            return False, f"❌ Base de datos no encontrada ('{db_name}'): En Clever Cloud el nombre de la base es el generado por el sistema (ej: 'bxxxxxxxx'), no 'dw_competencia_futbol'.", False
-        elif "Can't connect to MySQL server" in msg or "timed out" in msg:
+            return False, f"❌ Base de datos no encontrada ('{db_name}'): En Clever Cloud el nombre de la base es el código asignado (ej: 'bxxxxxxxx'), no 'dw_competencia_futbol'.", False
+        elif "Can't connect to MySQL server" in msg or "timed out" in msg or "2003" in msg:
             h = config.get('host') if config else ''
             p = config.get('port') if config else 3306
             return False, f"❌ No se pudo conectar al host ('{h}:{p}'): Verificá que el Host de Clever Cloud esté bien escrito y el puerto sea 3306.", False
+        elif "Unknown MySQL server host" in msg or "2005" in msg:
+            h = config.get('host') if config else ''
+            return False, f"❌ Host desconocido ('{h}'): Verificá no tener espacios ni caracteres extra en el Host.", False
         return False, f"❌ Fallo de conexión: {msg}", False
 
 
@@ -163,28 +195,60 @@ def _adaptar_sql_para_sqlite(sql):
     return sql_adaptado
 
 
-def ejecutar_consulta(sql, tipo_origen="clever", config=None, ruta_sqlite=None):
-    """Ejecuta una consulta SQL y retorna (DataFrame, tiempo_segundos, error_str)."""
+def ejecutar_consulta(sql, tipo_origen="clever", config=None, ruta_sqlite=None, permitir_fallback=True):
+    """Ejecuta una consulta SQL y retorna (DataFrame, tiempo_segundos, error_str).
+    Si permitir_fallback=True y el origen remoto (Clever Cloud/MySQL) falla o no está configurado,
+    ejecuta automáticamente sobre la base de contingencia SQLite para que la aplicación nunca se rompa.
+    El DataFrame resultante contendrá df.attrs['origen'] y df.attrs['error_previo'] si hubo fallback.
+    """
     t0 = time.time()
-    try:
-        if tipo_origen in ("clever", "local"):
-            cfg = config or obtener_config_por_defecto()
-            engine = crear_engine_mysql(cfg)
-            with engine.connect() as conn:
-                df = pd.read_sql_query(text(sql), conn)
-            duracion = time.time() - t0
-            return df, duracion, None
+    error_remoto = None
+
+    if tipo_origen in ("clever", "local"):
+        cfg = config or obtener_config_por_defecto()
+
+        # Validar si Clever Cloud tiene credenciales configuradas
+        if tipo_origen == "clever" and not es_config_clever_valida(cfg):
+            error_remoto = "CREDENCIALES_PENDIENTES: No se han configurado las credenciales de Clever Cloud."
         else:
-            # Modo SQLite contingencia
+            try:
+                engine = crear_engine_mysql(cfg)
+                with engine.connect() as conn:
+                    df = pd.read_sql_query(text(sql), conn)
+                duracion = time.time() - t0
+                df.attrs["origen"] = tipo_origen
+                return df, duracion, None
+            except Exception as e:
+                error_remoto = str(e)
+
+        # Si falló el origen remoto y se permite fallback:
+        if permitir_fallback:
+            try:
+                conn_fb = preparar_conexion_sqlite(ruta_sqlite)
+                sql_final = _adaptar_sql_para_sqlite(sql)
+                df_fb = pd.read_sql_query(sql_final, conn_fb)
+                conn_fb.close()
+                duracion_fb = time.time() - t0
+                df_fb.attrs["origen"] = "sqlite_fallback"
+                df_fb.attrs["error_previo"] = error_remoto
+                return df_fb, duracion_fb, None
+            except Exception as e_fb:
+                return pd.DataFrame(), time.time() - t0, f"Error remoto: {error_remoto} | Error contingencia: {e_fb}"
+        else:
+            return pd.DataFrame(), time.time() - t0, error_remoto
+
+    else:
+        # Modo SQLite contingencia directo
+        try:
             conn = preparar_conexion_sqlite(ruta_sqlite)
             sql_final = _adaptar_sql_para_sqlite(sql)
             df = pd.read_sql_query(sql_final, conn)
             conn.close()
             duracion = time.time() - t0
+            df.attrs["origen"] = "sqlite"
             return df, duracion, None
-    except Exception as e:
-        duracion = time.time() - t0
-        return pd.DataFrame(), duracion, str(e)
+        except Exception as e:
+            return pd.DataFrame(), time.time() - t0, str(e)
 
 
 def cargar_data_mart_en_clevercloud(config, callback_progreso=None):

@@ -55,6 +55,7 @@ PROYECTO BDA/
     ├── graficos/                       <- Figuras PNG de las preguntas oficiales
     │
     └── dashboard-dinamico/             <- TABLERO WEB DINÁMICO (Streamlit + Plotly + Render/Clever Cloud)
+        ├── COMO_SE_USA.md              <- Manual exhaustivo de uso, arquitectura Render y Clever Cloud
         ├── README.md                   <- Guía de uso rápido del dashboard interactivo
         ├── MANUAL_EXPOSICION_Y_DESPLIEGUE.md <- Manual detallado de exposición y defensa oral
         ├── app.py                      <- Aplicación web interactiva en Streamlit

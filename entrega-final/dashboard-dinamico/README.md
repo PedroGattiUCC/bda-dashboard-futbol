@@ -3,6 +3,8 @@
 
 Esta carpeta contiene la implementación del **Tablero Analítico Dinámico sobre el Modelo Estrella**, desarrollado específicamente para la **defensa oral presencial** ante la cátedra y desplegado en la nube con **Render** y **Clever Cloud**, conforme a lo solicitado por el docente.
 
+> 📘 **GUÍA COMPLETA DE USO:** Consultá el manual detallado paso a paso en [**`COMO_SE_USA.md`**](file:///C:/PROYECTO%20BDA/entrega-final/dashboard-dinamico/COMO_SE_USA.md), donde se explica minuciosamente cómo operar la aplicación en vivo, qué hace cada botón y gráfico, cómo trabaja Render tras bambalinas, y cómo conectar y migrar Clever Cloud MySQL sin fallos.
+
 ---
 
 ## ⚡ Inicio Rápido (En 2 Minutos)
